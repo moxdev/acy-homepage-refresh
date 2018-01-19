@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.ninja-forms-required-items {
+	font-style:italic;
+	font-size:.9em;
+	padding:.5em 0;
+}
+
+.ninja-forms-form-wrap label {
+	font-size:.8em;
+	font-weight:200;
+}
+
+.list-dropdown-wrap.label-above select, .list-dropdown-wrap.label-below select {
+	width:auto;
+}
+
+.ninja-forms-success-msg {
+	border:1px solid #6ed41c;
+	color:#6ed41c;
+	padding:1em;
+	font-weight:700;
+}
+
+.ninja-forms-success-msg p {
+	margin:0;
+}
