@@ -10,18 +10,29 @@
   }
 
   .pg-feature-img {
+    background-color: #fff;
+    position: relative;
     height: 450px;
+    overflow: hidden;
+    margin: 0;
+
+    img {
+      object-fit: cover;
+      font-family: 'object-fit: cover';
+      width: 100%;
+      height: 100%;
+    }
 
     @include respond-to-vert(small) {
-      height: 650px;
+      height: 550px;
     }
 
     @include respond-to-vert(medium) {
-      height: 750px;
+      height: 550px;
     }
 
     @include respond-to(medium) {
-      height: 750px;
+      height: 550px;
     }
   }
 
@@ -41,15 +52,18 @@
       position: absolute;
       left: 50%;
       margin-left: -25px;
-      bottom: 0.5em;
+      bottom: 1.5em;
       background: none;
       z-index: 5;
       outline: none;
       -webkit-appearance: none;
       animation: bounce linear 1s infinite;
 
-      @include respond-to(medium) {
+      @include respond-to(small) {
         bottom: 1.5em;
+      }
+      @include respond-to(medium) {
+        bottom: 2.5em;
       }
     }
   }
@@ -70,6 +84,46 @@
 
     .videoautoplay &.loaded .pg-feature-img {
       display: none;
+    }
+  }
+
+  #content {
+    transform: skewY(5deg);
+    margin-top: -1.625rem;
+    padding-top: 3rem;
+
+    @include respond-to(x-small) {
+      margin-top: -2.625rem;
+    }
+
+    @include respond-to(small) {
+      padding-top: 4.5rem;
+      margin-top: -3.625rem;
+    }
+
+    @include respond-to(large) {
+      margin-top: -4.625rem;
+      padding-bottom: 8rem;
+    }
+
+    @include respond-to(x-large) {
+      margin-top: -6.625rem;
+    }
+
+    #primary {
+      transform: skewY(-5deg);
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translate3D(0, 0, 0);
+    }
+    50% {
+      transform: translate3D(0, -10px, 0);
+    }
+    100% {
+      transform: translate3D(0, 0, 0);
     }
   }
 }
