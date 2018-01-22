@@ -3616,6 +3616,7 @@ div.employee {
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0 0 10px #000;
+  text-decoration: none;
   width: 50px;
   text-align: center;
   position: absolute;

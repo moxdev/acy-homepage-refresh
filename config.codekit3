@@ -40,6 +40,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/bs-config.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/bs-config-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/class-tgm-plugin-activation.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1189,6 +1199,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/c8c8fbae485e5ea001e65bf3db61e5c679449bc8\/_variables-site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e60744b72173249ec0022f8ca23e31bc4b354dec\/_mixins-master.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e60744b72173249ec0022f8ca23e31bc4b354dec\/_mixins-master.scssc",
 		"oF": 0
 		},
 	"\/sass\/home-page-refresh.scss": {
