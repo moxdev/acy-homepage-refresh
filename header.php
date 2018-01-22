@@ -149,6 +149,19 @@ src="https://www.facebook.com/tr?id=433228223706272&ev=PageView&noscript=1"
 			$walker = new description_walker;
 			wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'walker' => $walker ) );?>
 		</nav><!-- #site-navigation -->
+	<?php }
+
+	if( has_post_thumbnail() && is_front_page() ) {
+		wp_enqueue_script( 'atlantic-cruising-yachts-home-video', get_template_directory_uri() . '/js/min/home-video-min.js', array('atlantic-cruising-yachts-autoplay-detection'), NULL, true ); ?>
+
+		<div class="pg-video" id="home-video">
+			<a href="#content" class="btn" id="scroll_btn">&or;</a>
+		</div>
+
+		<figure class="pg-feature-img">
+			<?php the_post_thumbnail('page-feature'); ?>
+		</figure>
+
 	<?php } ?>
 
 	<div id="translate-wrap">

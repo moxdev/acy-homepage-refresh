@@ -156,6 +156,8 @@ function atlantic_cruising_yachts_scripts() {
 	if(has_post_thumbnail() || is_page_template('frontpage.php')) {
 		wp_enqueue_script( 'atlantic-cruising-yachts-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150610', true );
 		wp_enqueue_script( 'atlantic-cruising-yachts-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array('jquery'), '20150610', true );
+		wp_register_script('atlantic-cruising-yachts-autoplay-detection', get_template_directory_uri() . '/js/min/modernizr-custom-min.js', FALSE, FALSE, TRUE);
+		wp_register_script('atlantic-cruising-yachts-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', FALSE, FALSE, TRUE);
 	}
 
 	// if(is_page('inventory')) {

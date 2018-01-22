@@ -1,0 +1,74 @@
+.home {
+  #page {
+    background-color: #fff;
+  }
+
+  .pg-feature-img,
+  .pg-video {
+    display: none;
+    position: relative;
+  }
+
+  .pg-feature-img {
+    height: 450px;
+
+    @include respond-to-vert(small) {
+      height: 650px;
+    }
+
+    @include respond-to-vert(medium) {
+      height: 750px;
+    }
+
+    @include respond-to(medium) {
+      height: 750px;
+    }
+  }
+
+  .pg-video {
+    video {
+      width: 100%;
+    }
+
+    .btn {
+      font-size: 3em;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #000;
+      width: 50px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      bottom: 0.5em;
+      background: none;
+      z-index: 5;
+      outline: none;
+      -webkit-appearance: none;
+      animation: bounce linear 1s infinite;
+
+      @include respond-to(medium) {
+        bottom: 1.5em;
+      }
+    }
+  }
+
+  .no-videoautoplay &.loaded .pg-feature-img,
+  .videoautoplay &.loaded .pg-feature-img {
+    display: block;
+  }
+
+  .no-videoautoplay &.loaded .pg-video {
+    display: none;
+  }
+
+  @include respond-to(small) {
+    .videoautoplay &.loaded .pg-video {
+      display: block;
+    }
+
+    .videoautoplay &.loaded .pg-feature-img {
+      display: none;
+    }
+  }
+}

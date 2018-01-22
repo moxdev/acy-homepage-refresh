@@ -1,0 +1,1 @@
+Modernizr.on("videoautoplay",function(e){var t=document.getElementById("home-video");if(e){var o=document.createElement("video");o.loop=!0,o.autoplay=!0,o.src="/wp-content/themes/atlantic-cruising-yachts/media/CA-FINAL-Homepage-051517.mp4",t.appendChild(o)}}),window.addEventListener("load",function(){document.getElementsByTagName("body")[0].classList.add("loaded")});
