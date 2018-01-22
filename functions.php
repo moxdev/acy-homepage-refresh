@@ -40,6 +40,7 @@ function atlantic_cruising_yachts_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('home-feature', 1200, 470, true);
+	add_image_size('home-main-content', 300, 9999, true);
 	add_image_size('yacht-feature', 1800, 750, true);
 	add_image_size('yacht-lightbox-thumb', 75, 75, true);
 	add_image_size('staff-headshot', 240, 240, true);
@@ -227,6 +228,14 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Homepage custom functions.
+ */
+require get_template_directory() . '/inc/home-testimonial.php';
+require get_template_directory() . '/inc/home-ownership.php';
+require get_template_directory() . '/inc/home-learn-more.php';
+require get_template_directory() . '/inc/home-highlights.php';
 
 /**
  * REMOVE EMOJIS FOR WORDPRESS 4.2

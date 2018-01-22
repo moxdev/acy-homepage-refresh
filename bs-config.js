@@ -18,7 +18,7 @@ module.exports = {
       port: 8080
     }
   },
-  files: ['style.css', '*.php', 'js/**/*.js', 'imgs/*.svg', 'imgs/*.png', 'imgs/*.jpg'],
+  files: ['style.css', './**/*.php', 'js/**/*.js', 'imgs/*.svg', 'imgs/*.png', 'imgs/*.jpg'],
   watchOptions: {},
   // "server": true, if // not using proxy
   server: false,

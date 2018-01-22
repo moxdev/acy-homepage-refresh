@@ -11,6 +11,22 @@
 
 		</div><!-- #content -->
 
+		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_testimonial_section' ) ) { 
+			atlantic_cruising_yachts_homepage_testimonial_section();
+		} ?>
+
+		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_learn_more_section' ) ) { 
+			atlantic_cruising_yachts_homepage_learn_more_section();
+		} ?>
+
+		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_highlights_section' ) ) { 
+			atlantic_cruising_yachts_homepage_highlights_section();
+		} ?>
+
+		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_ownership_section' ) ) { 
+			atlantic_cruising_yachts_homepage_ownership_section();
+		} ?>
+
 		<?php if( !is_page_template('page-plain-single-column.php') && !is_page_template('page-broker.php')) { ?>
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<?php

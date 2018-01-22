@@ -338,6 +338,34 @@
 		"oAP": "\/inc\/extras.php",
 		"oF": 0
 		},
+	"\/inc\/home-highlights.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-highlights.php",
+		"oF": 0
+		},
+	"\/inc\/home-learn-more.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-learn-more.php",
+		"oF": 0
+		},
+	"\/inc\/home-ownership.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-ownership.php",
+		"oF": 0
+		},
+	"\/inc\/home-testimonial.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/home-testimonial.php",
+		"oF": 0
+		},
 	"\/inc\/jetpack.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -749,6 +777,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/old-for-pre-owned-page-page-inventory.php",
+		"oF": 0
+		},
+	"\/old-frontpage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/old-frontpage.php",
 		"oF": 0
 		},
 	"\/old-js\/boat-inventory.js": {

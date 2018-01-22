@@ -68,24 +68,26 @@
     }
   }
 
-  .no-videoautoplay &.loaded .pg-feature-img,
-  .videoautoplay &.loaded .pg-feature-img {
-    display: block;
-  }
+  // ========== UNCOMMENT TO SHOW VIDEO AND IMAGE ======
 
-  .no-videoautoplay &.loaded .pg-video {
-    display: none;
-  }
+  // .no-videoautoplay &.loaded .pg-feature-img,
+  // .videoautoplay &.loaded .pg-feature-img {
+  //   display: block;
+  // }
 
-  @include respond-to(small) {
-    .videoautoplay &.loaded .pg-video {
-      display: block;
-    }
+  // .no-videoautoplay &.loaded .pg-video {
+  //   display: none;
+  // }
 
-    .videoautoplay &.loaded .pg-feature-img {
-      display: none;
-    }
-  }
+  // @include respond-to(small) {
+  //   .videoautoplay &.loaded .pg-video {
+  //     display: block;
+  //   }
+
+  //   .videoautoplay &.loaded .pg-feature-img {
+  //     display: none;
+  //   }
+  // }
 
   #content {
     transform: skewY(5deg);
@@ -112,6 +114,21 @@
 
     #primary {
       transform: skewY(-5deg);
+      float: none;
+      width: 100%;
+
+      .main-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-side {
+          flex: 2;
+        }
+        .right-side {
+          flex: 1;
+        }
+      }
     }
   }
 
@@ -125,5 +142,9 @@
     100% {
       transform: translate3D(0, 0, 0);
     }
+  }
+
+  .home-testimonial {
+    background-color: #ab0534;
   }
 }
