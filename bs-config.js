@@ -18,11 +18,11 @@ module.exports = {
       port: 8080
     }
   },
-  files: ['style.css', './**/*.php', 'js/**/*.js', 'imgs/*.svg', 'imgs/*.png', 'imgs/*.jpg'],
+  files: ["style.css", "./**/*.php", "js/**/*.js", "imgs/*.svg", "imgs/*.png", "imgs/*.jpg"],
   watchOptions: {},
   // "server": true, if // not using proxy
   server: false,
-  proxy: 'https://acyhomepage.local/',
+  proxy: "http://localhost:8000/",
   port: 3000,
   middleware: false,
   serveStatic: [],
@@ -35,14 +35,14 @@ module.exports = {
       toggles: true
     }
   },
-  logLevel: 'info',
-  logPrefix: 'BS',
+  logLevel: "info",
+  logPrefix: "BS",
   logConnections: false,
   logFileChanges: true,
   logSnippet: true,
   rewriteRules: false,
-  open: 'local',
-  browser: 'firefox',
+  open: "local",
+  browser: "firefox",
   //   browser: 'google chrome',
   xip: false,
   hostnameSuffix: false,
@@ -50,7 +50,7 @@ module.exports = {
   notify: true,
   scrollProportionally: true,
   scrollThrottle: 0,
-  scrollRestoreTechnique: 'window.name',
+  scrollRestoreTechnique: "window.name",
   scrollElements: [],
   scrollElementMapping: [],
   reloadDelay: 0,
@@ -64,7 +64,7 @@ module.exports = {
   localOnly: false,
   codeSync: true,
   timestamps: true,
-  clientEvents: ['scroll', 'scroll:element', 'input:text', 'input:toggles', 'form:submit', 'form:reset', 'click'],
+  clientEvents: ["scroll", "scroll:element", "input:text", "input:toggles", "form:submit", "form:reset", "click"],
   socket: {
     socketIoOptions: {
       log: false
@@ -72,22 +72,22 @@ module.exports = {
     socketIoClientConfig: {
       reconnectionAttempts: 50
     },
-    path: '/browser-sync/socket.io',
-    clientPath: '/browser-sync',
-    namespace: '/browser-sync',
+    path: "/browser-sync/socket.io",
+    clientPath: "/browser-sync",
+    namespace: "/browser-sync",
     clients: {
       heartbeatTimeout: 5000
     }
   },
   tagNames: {
-    less: 'link',
-    scss: 'link',
-    css: 'link',
-    jpg: 'img',
-    jpeg: 'img',
-    png: 'img',
-    svg: 'img',
-    gif: 'img',
-    js: 'script'
+    less: "link",
+    scss: "link",
+    css: "link",
+    jpg: "img",
+    jpeg: "img",
+    png: "img",
+    svg: "img",
+    gif: "img",
+    js: "script"
   }
 };
