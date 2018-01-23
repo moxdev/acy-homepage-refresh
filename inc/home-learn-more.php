@@ -1,21 +1,33 @@
 <?php
 /**
  * Custom function for homepage
- * 
+ *
  * @package Atlantic Cruising Yachts
  */
 
 function atlantic_cruising_yachts_homepage_learn_more_section() {
-  if ( function_exists( 'get_field' ) ) { ?>
+  if ( function_exists( 'get_field' ) ) {
+    if( have_rows('home_page_sub_content') ) { ?>
 
-  <section class="home-learn-more">
+    <section class="home-learn-more">
+      <div class="home-sub-content-wrapper">
+        <?php while ( have_rows('home_page_sub_content') ) : the_row();
+          $title   = get_sub_field('sub_content_title');
+          $img     = get_sub_field('sub_content_image');
+          $content = get_sub_field('sub_content'); ?>
 
-    <h1>Learn More</h1>
+          <div class="home-sub-content-inner-wrapper">
+            <img src="<?php echo esc_attr( $img['sizes']['large'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>">
+            <span><h2><?php echo esc_html( $title ); ?></h2></span>
+            <span><?php echo $content; ?></span>
+          </div>
 
-  </section>
+        <?php endwhile; ?>
 
-  <?php
+      </div><!-- home-sub-content-wrapper -->
+    </section>
 
+    <?php
+    }
   }
-
 }

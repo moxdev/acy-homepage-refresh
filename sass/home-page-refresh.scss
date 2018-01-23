@@ -3,6 +3,16 @@
     background-color: #fff;
   }
 
+  a.btn {
+    color: #fff;
+    background-color: #345174;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 250px;
+    margin: 0 auto;
+  }
+
   .pg-feature-img,
   .pg-video {
     display: none;
@@ -18,7 +28,7 @@
 
     img {
       object-fit: cover;
-      font-family: 'object-fit: cover';
+      font-family: "object-fit: cover";
       width: 100%;
       height: 100%;
     }
@@ -41,7 +51,7 @@
       width: 100%;
     }
 
-    .btn {
+    #scroll_btn {
       font-size: 3em;
       color: #fff;
       text-transform: uppercase;
@@ -144,7 +154,115 @@
     }
   }
 
+  // Testimonial Section
   .home-testimonial {
     background-color: #ab0534;
+  }
+
+  // Learn More Section
+  .home-learn-more {
+    img {
+      display: block;
+      object-fit: cover;
+      font-family: "object-fit: cover";
+      width: 100%;
+      height: 200px;
+
+      @include respond-to(small) {
+        height: 275px;
+      }
+
+      @include respond-to(large) {
+        height: 350px;
+      }
+    }
+
+    span {
+      display: block;
+      padding: 0 1.2em;
+    }
+
+    .home-sub-content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .home-sub-content-inner-wrapper {
+      flex: 0 0 100%;
+
+      @include respond-to(x-small) {
+        flex: 0 0 50%;
+      }
+    }
+  }
+
+  // Home Highlights
+  .home-highlights {
+    //max-width: $width_max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      display: block;
+      position: relative;
+      flex: 0 0 100%;
+      height: 200px;
+
+      span {
+        @extend h2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.125s;
+      }
+
+      img {
+        display: block;
+        object-fit: cover;
+        font-family: "object-fit: cover";
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.125s;
+      }
+
+      &:hover {
+        span {
+          color: #000;
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+          opacity: 0.1;
+        }
+      }
+    }
+
+    @include respond-to(x-small) {
+      a {
+        flex: 0 0 50%;
+      }
+    }
+
+    @include respond-to(small) {
+      a {
+        height: 275px;
+      }
+    }
+
+    @include respond-to(large) {
+      a {
+        height: 350px;
+      }
+    }
   }
 }

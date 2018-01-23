@@ -300,39 +300,39 @@ function donaldson_group_register_required_plugins() {
  * CUSTOM POST STUFF
  */
 
-function atlantic_cruising_yachts_create_custom_posts() {
-	/*register_post_type( 'yachts',
-		array(
-			'labels' => array(
-				'name' => __( 'Yachts' ),
-				'add_new' => __( 'Add New Yacht' ),
-				'add_new_item' => __( 'Add New Yacht' ),
-				'edit' => __( 'Edit' )
-			),
-			'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
-			'public' => true,
-			'menu_position' =>5,
-			'menu_icon' => 'dashicons-flag',
-			'has_archive' => false
-		)
-	);*/
-	register_post_type( 'home-page-highlights',
-		array(
-			'labels' => array(
-				'name' => __( 'Home Page Highlights' ),
-				'add_new' => __( 'Add New Highlight' ),
-				'add_new_item' => __( 'Add New Highlight' ),
-				'edit' => __( 'Edit' )
-			),
-			'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
-			'public' => true,
-			'menu_position' =>5,
-			'menu_icon' => 'dashicons-star-filled',
-			'has_archive' => false
-		)
-	);
-}
-add_action( 'init', 'atlantic_cruising_yachts_create_custom_posts' );
+// function atlantic_cruising_yachts_create_custom_posts() {
+// 	/*register_post_type( 'yachts',
+// 		array(
+// 			'labels' => array(
+// 				'name' => __( 'Yachts' ),
+// 				'add_new' => __( 'Add New Yacht' ),
+// 				'add_new_item' => __( 'Add New Yacht' ),
+// 				'edit' => __( 'Edit' )
+// 			),
+// 			'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
+// 			'public' => true,
+// 			'menu_position' =>5,
+// 			'menu_icon' => 'dashicons-flag',
+// 			'has_archive' => false
+// 		)
+// 	);*/
+// 	// register_post_type( 'home-page-highlights',
+// 	// 	array(
+// 	// 		'labels' => array(
+// 	// 			'name' => __( 'Home Page Highlights' ),
+// 	// 			'add_new' => __( 'Add New Highlight' ),
+// 	// 			'add_new_item' => __( 'Add New Highlight' ),
+// 	// 			'edit' => __( 'Edit' )
+// 	// 		),
+// 	// 		'supports' => array( 'title', 'editor', 'thumbnail', 'revisions'),
+// 	// 		'public' => true,
+// 	// 		'menu_position' =>5,
+// 	// 		'menu_icon' => 'dashicons-star-filled',
+// 	// 		'has_archive' => false
+// 	// 	)
+// 	// );
+// }
+// add_action( 'init', 'atlantic_cruising_yachts_create_custom_posts' );
 
 /**
  * INCLUDE PLUGINS
@@ -441,11 +441,16 @@ add_filter('mce_buttons_2', 'my_mce_buttons_2');
 
 function my_mce_before_init_insert_formats( $init_array ) {
     $style_formats = array(
-		array(
+    array(
             'title' => 'Disclaimer', // Title to show in dropdown
             'inline' => 'span', // Element to add class to
             'classes' => 'disclaimer' // CSS class to add
-        )
+        ),
+    array(
+      'title' => 'Button', // Title to show in dropdown
+      'inline' => 'a', // Element to add class to
+      'classes' => 'btn' // CSS class to add
+    ),
     );
     $init_array['style_formats'] = json_encode( $style_formats );
     return $init_array;
@@ -458,6 +463,7 @@ function atlantic_cruising_yachts_add_editor_styles() {
     add_editor_style( 'custom-editor-style.css' );
 }
 add_action( 'admin_init', 'atlantic_cruising_yachts_add_editor_styles' );
+
 
 /**
  * NINJA FORMS STYLING
