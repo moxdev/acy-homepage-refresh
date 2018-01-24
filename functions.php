@@ -155,10 +155,20 @@ function atlantic_cruising_yachts_scripts() {
 	}
 
 	if(has_post_thumbnail() || is_page_template('frontpage.php')) {
+
 		wp_enqueue_script( 'atlantic-cruising-yachts-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150610', true );
+
 		wp_enqueue_script( 'atlantic-cruising-yachts-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array('jquery'), '20150610', true );
+
 		wp_register_script('atlantic-cruising-yachts-autoplay-detection', get_template_directory_uri() . '/js/min/modernizr-custom-min.js', FALSE, FALSE, TRUE);
+
 		wp_register_script('atlantic-cruising-yachts-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', FALSE, FALSE, TRUE);
+
+    wp_enqueue_script( 'flickity-testimonial', get_template_directory_uri() . '/js/min/flickity-min.js', array('atlantic-cruising-yachts-autoplay-detection'), false, true );
+
+    // wp_enqueue_script( 'flickity-testimonial', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('atlantic-cruising-yachts-autoplay-detection'), false, true );
+
+    wp_enqueue_script( 'atlantic-cruising-yachts-testimonial', get_template_directory_uri() . '/js/min/testimonial-carousel-min.js', array('flickity-testimonial'), false, true );
 	}
 
 	// if(is_page('inventory')) {
@@ -296,7 +306,74 @@ function donaldson_group_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 
+// Register Custom Post Type for Testimonial
+function atlantic_cruising_yachts_create_custom_post_type() {
+
+  $labels = array(
+    'name'                  => 'Testimonials',
+    'singular_name'         => 'Testimonial',
+    'menu_name'             => 'Testimonials',
+    'name_admin_bar'        => 'Testimonials',
+    'archives'              => 'Testimonials Archives',
+    'attributes'            => 'Testimonials Attributes',
+    'parent_item_colon'     => 'Parent Item: Testimonials',
+    'all_items'             => 'All Testimonials',
+    'add_new_item'          => 'Add New Testimonial',
+    'add_new'               => 'Add New Testimonial',
+    'new_item'              => 'New Testimonial',
+    'edit_item'             => 'Edit Testimonial',
+    'update_item'           => 'Update Testimonial',
+    'view_item'             => 'View Testimonial',
+    'view_items'            => 'View Testimonials',
+    'search_items'          => 'Search Testimonials',
+    'not_found'             => 'Not found',
+    'not_found_in_trash'    => 'Not found in Trash',
+    'featured_image'        => 'Featured Image',
+    'set_featured_image'    => 'Set featured image',
+    'remove_featured_image' => 'Remove featured image',
+    'use_featured_image'    => 'Use as featured image',
+    'insert_into_item'      => 'Insert into item',
+    'uploaded_to_this_item' => 'Uploaded to this item',
+    'items_list'            => 'Items list',
+    'items_list_navigation' => 'Items list navigation',
+    'filter_items_list'     => 'Filter items list',
+  );
+  $rewrite = array(
+    'slug'                  => 'testimonial',
+    'with_front'            => true,
+    'pages'                 => true,
+    'feeds'                 => true,
+  );
+  $args = array(
+    'label'                 => 'Testimonial',
+    'description'           => 'Testimonial Section',
+    'labels'                => $labels,
+    'supports'              => array( 'title', 'editor', 'revisions' ),
+    'taxonomies'            => array( 'testimonial' ),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 5,
+    'menu_icon'             => 'dashicons-testimonial',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => false,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'query_var'             => 'testimonial',
+    'rewrite'               => $rewrite,
+    'capability_type'       => 'page',
+    'show_in_rest'          => true,
+  );
+  register_post_type( 'testimonials', $args );
+
+}
+add_action( 'init', 'atlantic_cruising_yachts_create_custom_post_type', 0 );
+
 /**
+ * OLD CUSTOM HIGHLIGHT POST
  * CUSTOM POST STUFF
  */
 

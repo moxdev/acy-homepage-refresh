@@ -56,12 +56,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Modal
 # Home Refresh
 --------------------------------------------------------------*/
-@import 'variables/variables-site';
-@import 'mixins/mixins-master';
-@import 'main-css';
+@import "variables/variables-site";
+@import "mixins/mixins-master";
+@import "main-css";
+
+/*--------------------------------------------------------------
+# Flickity
+--------------------------------------------------------------*/
+
+@import "modules/flickity";
 
 /* -----------------------------------------------------------
 # Home Refresh
 --------------------------------------------------------------*/
 
-@import 'home-page-refresh';
+@import "home-page-refresh";
