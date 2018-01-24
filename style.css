@@ -3873,20 +3873,59 @@ http://flickity.metafizzy.co
   display: block;
   padding: 0 1.2em;
 }
-.home .home-learn-more .home-sub-content-wrapper {
+.home .home-learn-more .home-sub-content-inner-wrapper {
+  padding-bottom: 2em;
+}
+.home .home-learn-more .home-sub-content-wrapper.col-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+@media screen and (min-width: 575px) {
+  .home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+.home .home-learn-more .home-sub-content-wrapper.col-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.home .home-learn-more .home-sub-content-inner-wrapper {
+.home .home-learn-more .home-sub-content-wrapper.col-3 .home-sub-content-inner-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+@media screen and (min-width: 750px) {
+  .home .home-learn-more .home-sub-content-wrapper.col-3 .home-sub-content-inner-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33%;
+            flex: 0 0 33%;
+  }
+}
+.home .home-learn-more .home-sub-content-wrapper.col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.home .home-learn-more .home-sub-content-wrapper.col-4 .home-sub-content-inner-wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
 }
 @media screen and (min-width: 575px) {
-  .home .home-learn-more .home-sub-content-inner-wrapper {
+  .home .home-learn-more .home-sub-content-wrapper.col-4 .home-sub-content-inner-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
