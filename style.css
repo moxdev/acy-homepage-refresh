@@ -3507,6 +3507,7 @@ http://flickity.metafizzy.co
 }
 
 .flickity-viewport {
+  overflow: hidden;
   position: relative;
   height: 100%;
 }
@@ -3836,6 +3837,8 @@ http://flickity.metafizzy.co
 }
 .home .home-testimonial .testimonial-carousel {
   color: #fff;
+  padding-left: 2em;
+  padding-right: 2em;
   /* big buttons, no circle */
   /* arrow color */
 }
@@ -3846,7 +3849,7 @@ http://flickity.metafizzy.co
 .home .home-testimonial .testimonial-carousel .cell {
   width: 100%;
   height: auto;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .home .home-learn-more img {
   display: block;
