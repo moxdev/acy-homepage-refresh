@@ -2354,45 +2354,47 @@ object {
 /*#colophon #colophon-address-wrapper {
   margin:0 0 .75em 0;
 }*/
-#colophon-social-wrapper {
-  margin: 1em 0 0 0;
-  display: block;
-}
-
-#colophon-social-wrapper ul {
+#colophon .social-media {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-#colophon-social-wrapper ul li {
-  float: left;
-  margin: 0 0.5em 0 0;
+#colophon .social-media li {
+  margin-bottom: 0;
 }
 
-#colophon-social-wrapper ul li a {
+#colophon .social-media a {
   display: block;
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
   width: 40px;
   height: 40px;
-  background-image: url(imgs/sprite-social-media-icons.svg);
+  background-image: url(imgs/sprite-icons.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
-  border: 1px solid red;
 }
 
-#colophon-social-wrapper ul li a#colophon-fb {
-  background-position: 0px 0px;
+#colophon .social-media .fb a {
+  background-position: 0 0;
 }
 
-#colophon-social-wrapper ul li a#colophon-li {
-  background-position: 0 -74px;
+#colophon .social-media .linked a {
+  background-position: -325px 0;
 }
 
-#colophon-social-wrapper ul li a#colophon-yt {
-  background-position: 0 -111px;
+#colophon .social-media .yt a {
+  background-position: -160px 0;
 }
 
 #colophon #colophon-disclaimer {

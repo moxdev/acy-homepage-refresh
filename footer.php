@@ -79,13 +79,35 @@
 						$li = get_theme_mod('setting_linkedin_url');
 						$yt = get_theme_mod('setting_youtube_url');
 						if($fb || $li || $yt) { ?>
-						<div id="colophon-social-wrapper">
-							<ul>
-							<?php if($fb): ?><li><a href="<?php echo $fb; ?>" target="_blank" id="colophon-fb">Find Us on Facebook</a></li><?php endif; ?>
-							<?php if($li): ?><li><a href="<?php echo $li; ?>" target="_blank" id="colophon-li">Connect With Us on LinkedIn</a></li><?php endif; ?>
-							<?php if($yt): ?><li><a href="<?php echo $yt; ?>" target="_blank" id="colophon-yt">View Our You Tube Channel</a></li><?php endif; ?>
-							</ul>
-						</div>
+
+						<ul class="social-media">
+
+							<?php if ($fb): ?>
+
+								<li class="fb">
+									<a href="<?php echo $fb; ?>" target="_blank">Find Us On Facebook</a>
+								</li>
+
+							<?php endif ?>
+							<?php if ($li): ?>
+
+								<li class="linked">
+									<a href="<?php echo $li; ?>" target="_blank">Find Us On LinkedIn</a>
+								</li>
+
+							<?php endif ?>
+
+							<?php if ($yt): ?>
+
+								<li class="yt">
+									<a href="<?php echo $yt; ?>" target="_blank">Watch Us On YouTube</a>
+								</li>
+
+							<?php endif ?>
+
+						</ul>
+
+
 						<?php } ?>
 					</div><!-- contact-flex-wrapper -->
 
