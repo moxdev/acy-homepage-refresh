@@ -219,9 +219,9 @@ select {
 }
 
 button,
-html input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -241,26 +241,26 @@ input {
   line-height: normal;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-input[type='search'] {
+input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -303,37 +303,37 @@ th {
 # Typography
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format("woff2"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
   src: local("Open Sans Italic"), local("OpenSans-Italic"), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav_IXfk.woff2) format("woff2"), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 700;
   src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxv79_ZuUxCigM2DespTnFaw.woff2) format("woff2");
 }
 @font-face {
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-style: normal;
   font-weight: 300;
   src: local("Open Sans Cond Light"), local("OpenSans-CondensedLight"), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5zr7w4p9aSvGirXi6XmeXNA.woff2) format("woff2"), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xGAzD5WKQVN4wSyA0MYYi4rr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
@@ -347,7 +347,7 @@ textarea {
   font-size: 14px;
   font-size: 0.95em;
   line-height: 1.4;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 300;
 }
 
@@ -357,10 +357,10 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+  clear: both;
 }*/
 h1 {
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: 300;
   text-transform: uppercase;
   color: #ab0634;
@@ -412,7 +412,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: 'Courier 10 Pitch', Courier, monospace;
+  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375em;
   line-height: 1.6;
@@ -426,7 +426,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375em;
 }
@@ -494,12 +494,12 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
 }
 
 blockquote,
 q {
-  quotes: '' '';
+  quotes: "" "";
 }
 
 hr {
@@ -558,9 +558,9 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   background: #55788d;
   font-size: 13px;
   font-size: 0.9em;
@@ -572,33 +572,33 @@ input[type='submit'] {
   border-radius: 0;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='tel'],
-input[type='url'],
-input[type='password'],
-input[type='search'],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #d6d6d7;
   border-radius: 0;
 }
 
-input[type='text']:focus,
-input[type='email']:focus,
-input[type='tel']:focus,
-input[type='url']:focus,
-input[type='password']:focus,
-input[type='search']:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
 textarea:focus {
   color: #111;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'] {
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
   padding: 3px;
 }
 
@@ -608,12 +608,12 @@ textarea {
 }
 
 @media screen and (min-width: 975px) {
-  input[type='text'],
-  input[type='email'],
-  input[type='tel'],
-  input[type='url'],
-  input[type='password'],
-  input[type='search'],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
   textarea {
     font-size: 0.9em;
   }
@@ -679,7 +679,7 @@ a.tel:active {
 }
 
 .circular-cta:after {
-  content: '';
+  content: "";
   background-color: #a7bac9;
   position: absolute;
   z-index: 1;
@@ -735,7 +735,7 @@ a.tel:active {
 
 .circular-cta > div div div span:first-child:before,
 .circular-cta > div div div span:last-child:after {
-  content: '';
+  content: "";
   width: 70%;
   border-top: 1px solid #beccd7;
   display: block;
@@ -747,7 +747,7 @@ a.tel:active {
 
 .circular-cta > div div div span:first-child:after {
   display: block;
-  content: '';
+  content: "";
   width: 30px;
   height: 25px;
   background-color: #a7bac9;
@@ -878,7 +878,7 @@ a.tel:active {
   clear: both;
   display: none;
   /*float: left;
-	width: 100%;*/
+  width: 100%;*/
   position: fixed;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -933,11 +933,11 @@ a.tel:active {
 
 .main-navigation ul ul {
   /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;*/
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -999em;
+  z-index: 99999;*/
   padding-left: 1em;
 }
 
@@ -993,12 +993,12 @@ a.tel:active {
 }
 
 /*@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
 }*/
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -1158,8 +1158,8 @@ a.tel:active {
   }
 
   /*.main-navigation ul ul li a:hover, .main-navigation ul ul li a:hover, .main-navigation ul ul li.current_page_item > a, .main-navigation ul #menu-item-1227 div a:hover, .main-navigation ul #menu-item-1227 div .current_page_item > a {
-		background-color:#EEE;
-	}*/
+    background-color:#EEE;
+  }*/
   .main-navigation ul li.current_page_item > a:hover {
     cursor: text;
   }
@@ -1167,9 +1167,9 @@ a.tel:active {
   .main-navigation ul ul {
     float: left;
     /*position: absolute;
-		top: 1.5em;
-		left: -999em;
-		z-index: 9999;*/
+    top: 1.5em;
+    left: -999em;
+    z-index: 9999;*/
     padding: 0;
     right: auto;
   }
@@ -1451,7 +1451,7 @@ a.tel:active {
 }
 
 #secondary .subnav ul li a:after {
-  content: '\00BB';
+  content: "\00BB";
   font-size: 1.3em;
   margin-left: 0.2em;
 }
@@ -1481,11 +1481,11 @@ a.tel:active {
 }
 
 #secondary .subnav ul ul a:after {
-  content: '';
+  content: "";
 }
 
 #secondary .subnav ul ul a:before {
-  content: '\25B8';
+  content: "\25B8";
   color: #ab0634;
   font-size: 1.1em;
   margin: -0.5em 0.5em 0 0;
@@ -1685,7 +1685,7 @@ form:before,
 form:after,
 .location-wrapper:before,
 .location-wrapper:after {
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -1864,13 +1864,13 @@ form:after,
   display: inline;
 }
 
-.posted-on a[rel='bookmark'] {
+.posted-on a[rel="bookmark"] {
   text-decoration: none;
   color: inherit;
 }
 
-.posted-on a[rel='bookmark']:hover,
-.posted-on a[rel='bookmark']:active {
+.posted-on a[rel="bookmark"]:hover,
+.posted-on a[rel="bookmark"]:active {
   cursor: text;
 }
 
@@ -1995,7 +1995,7 @@ aside.widget ul li a:hover {
 }
 
 aside.widget ul li a:before {
-  content: '\25B8';
+  content: "\25B8";
   color: #ab0634;
   font-size: 1.1em;
   margin: -0.5em 0.5em 0 0;
@@ -2024,7 +2024,7 @@ aside#side-email-signup form span.side-form-title {
   line-height: 1.1;
   padding: 0.5em;
   color: #9a9b9d;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: 300;
   margin: 0 0 0.3em 0;
 }
@@ -2041,7 +2041,7 @@ aside#side-email-signup form input {
   margin: 0 0 0.8em;
 }
 
-aside#side-email-signup form input[type='submit'] {
+aside#side-email-signup form input[type="submit"] {
   margin: 0;
   float: right;
   width: auto;
@@ -2152,7 +2152,7 @@ object {
   max-width: 100%;
 }
 
-.wp-caption img[class*='wp-image-'] {
+.wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 0 auto;
 }
@@ -2233,12 +2233,12 @@ object {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-#masthead a[rel='home'] {
+#masthead a[rel="home"] {
   display: table;
   margin: 0 auto;
 }
 
-#masthead a[rel='home'] svg {
+#masthead a[rel="home"] svg {
   width: 175px;
   height: 42px;
   display: block;
@@ -2279,7 +2279,7 @@ object {
     padding: 1.2em;
   }
 
-  #masthead a[rel='home'] svg {
+  #masthead a[rel="home"] svg {
     width: 200px;
     height: 48px;
   }
@@ -2295,12 +2295,12 @@ object {
     padding: 1.2em 1.5em;
   }
 
-  #masthead a[rel='home'] {
+  #masthead a[rel="home"] {
     float: left;
     margin: 0 0 0 0.25em;
   }
 
-  #masthead a[rel='home'] svg {
+  #masthead a[rel="home"] svg {
     width: 235px;
     height: 56px;
   }
@@ -2310,9 +2310,9 @@ object {
   }
 
   /*#masthead .masthead-phone {
-		font-size:1em;
-		margin:-.43em 0px 0px;
-	}*/
+    font-size:1em;
+    margin:-.43em 0px 0px;
+  }*/
 }
 @media screen and (min-width: 1300px) {
   #masthead .phone-wrapper {
@@ -2325,9 +2325,10 @@ object {
 #colophon {
   position: relative;
   z-index: 50;
-  background-color: #55565a;
+  background-color: #4d4d4e;
   padding: 0.8em 1.2em;
   font-weight: 400;
+  text-align: center;
 }
 
 #colophon,
@@ -2351,10 +2352,11 @@ object {
 }
 
 /*#colophon #colophon-address-wrapper {
-	margin:0 0 .75em 0;
+  margin:0 0 .75em 0;
 }*/
 #colophon-social-wrapper {
   margin: 1em 0 0 0;
+  display: block;
 }
 
 #colophon-social-wrapper ul {
@@ -2370,17 +2372,19 @@ object {
 
 #colophon-social-wrapper ul li a {
   display: block;
-  width: 30px;
-  height: 32px;
-  background-image: url(imgs/sprite-icons.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  text-indent: 110%;
+  white-space: nowrap;
   overflow: hidden;
-  text-indent: -999em;
+  width: 40px;
+  height: 40px;
+  background-image: url(imgs/sprite-social-media-icons.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  border: 1px solid red;
 }
 
 #colophon-social-wrapper ul li a#colophon-fb {
-  background-position: 0 -37px;
+  background-position: 0px 0px;
 }
 
 #colophon-social-wrapper ul li a#colophon-li {
@@ -2393,10 +2397,6 @@ object {
 
 #colophon #colophon-disclaimer {
   margin: 3em 0 0 0;
-}
-
-#colophon #colophon-company-name {
-  display: none;
 }
 
 #colophon .location-wrapper {
@@ -2443,95 +2443,6 @@ object {
   height: 16px;
 }
 
-@media screen and (min-width: 575px) {
-  #colophon {
-    padding: 1.2em 1.6em;
-  }
-
-  #colophon .site-info {
-    float: left;
-    clear: left;
-  }
-
-  #colophon .ftr-nav {
-    float: right;
-    margin: 0px 0 1em 0;
-  }
-
-  #colophon #colophon-social-wrapper {
-    float: right;
-    margin: 0;
-    clear: right;
-  }
-
-  #colophon #colophon-social-wrapper ul li {
-    margin: 0 0 0 0.5em;
-  }
-
-  #colophon #colophon-disclaimer {
-    float: right;
-    clear: right;
-    text-align: right;
-    width: 58%;
-    margin: 1.5em 0 0 0;
-  }
-
-  #slug {
-    float: right;
-    clear: right;
-  }
-}
-@media screen and (min-width: 975px) {
-  #colophon .site-info,
-  #colophon-social-wrapper ul {
-    font-size: 0.7em;
-  }
-
-  #colophon #colophon-disclaimer {
-    font-size: 0.67em;
-  }
-}
-@media screen and (min-width: 1100px) {
-  #colophon .colophon-address,
-  #colophon .colophon-disclaimer {
-    display: inline;
-  }
-
-  #colophon .location-name,
-  #colophon .contact-wrapper,
-  #colophon .colophon-phone-wrapper,
-  #colophon .colophon-email-wrapper,
-  #colophon #colophon-disclaimer {
-    float: left;
-    margin: 0 10px 0 0;
-    padding: 0 0 0 10px;
-    border-left: 1px solid #fff;
-    line-height: 1;
-  }
-
-  #colophon .location-name {
-    padding: 0;
-    border-left: none;
-  }
-
-  #colophon .site-info .colophon-address:after {
-    content: '\002C';
-    margin-right: 2px;
-  }
-
-  #colophon #colophon-company-name,
-  #colophon #colophon-disclaimer {
-    padding: 0;
-    border-left: none;
-  }
-
-  #colophon #colophon-disclaimer {
-    float: left;
-    clear: left;
-    text-align: left;
-    margin: 0.5em 0 0 0;
-  }
-}
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -2572,7 +2483,7 @@ object {
 }
 
 .page-template-page-yacht .photo-nav ul li a:after {
-  content: '\25B8';
+  content: "\25B8";
   font-size: 0.9em;
   vertical-align: 1px;
   margin-left: 0.3em;
@@ -2609,12 +2520,12 @@ object {
 }
 
 /*.page-template-page-yacht .highlight-byo {
-	font-weight:700;
-	text-transform:uppercase;
-	display:table;
-	font-size:1.2em;
-	line-height:1.1;
-	text-decoration:none;
+  font-weight:700;
+  text-transform:uppercase;
+  display:table;
+  font-size:1.2em;
+  line-height:1.1;
+  text-decoration:none;
 }*/
 .page-template-page-yacht #video-wrapper,
 .page-template-page-yacht #dealer-commissioning-disclaimer-wrapper {
@@ -2815,7 +2726,7 @@ object {
 .staff-listing .home .home-highlights a span:after,
 .home .home-highlights a .staff-listing span:after {
   border-bottom: 1px dashed #99999a;
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   position: absolute;
@@ -2888,12 +2799,12 @@ div.employee {
   }
 }
 /*@media screen and (min-width:975px) {
-	div.employee {
-		-webkit-flex: 1 1 25%;
-		-ms-flex: 1 1 25%;
-		flex: 1 1 25%;
-		max-width:25%
-	}
+  div.employee {
+    -webkit-flex: 1 1 25%;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    max-width:25%
+  }
 }*/
 /*--------------------------------------------------------------
 ## Find a Yacht
@@ -2909,7 +2820,7 @@ div.employee {
 }
 
 .page-template-page-find-yacht .manufacturer-listing:before {
-  content: '';
+  content: "";
   height: 1px;
   position: absolute;
   left: 0;
@@ -3268,13 +3179,13 @@ div.employee {
 # Modal Windows
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   src: url("fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans.woff") format("woff"), url("fonts/OpenSans.ttf") format("truetype"), url("fonts/OpenSans.svg#OpenSans") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'OpenSans-Bold';
+  font-family: "OpenSans-Bold";
   src: url("fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold.woff") format("woff"), url("fonts/OpenSans-Bold.ttf") format("truetype"), url("fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -3282,7 +3193,7 @@ div.employee {
 .home-modal {
   display: none;
   /*display none for testing on live site*/
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   position: fixed;
   left: 0;
   right: 0;
@@ -3326,14 +3237,14 @@ div.employee {
 }
 
 .home-modal h3 {
-  font-family: 'OpenSans-Bold';
+  font-family: "OpenSans-Bold";
   font-size: 4em;
   color: #fff;
   margin: 0.25em 0 0;
 }
 
 .home-modal h2, .home-modal .home .home-highlights a span, .home .home-highlights a .home-modal span {
-  font-family: 'OpenSans-Bold';
+  font-family: "OpenSans-Bold";
   color: #ffd63b;
   text-transform: uppercase;
 }
@@ -3344,7 +3255,7 @@ div.employee {
 
 .home-modal div div > div:before,
 .home-modal div div > div:after {
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -3357,7 +3268,7 @@ div.employee {
   display: block;
   -webkit-transform: rotate(-11.75deg);
           transform: rotate(-11.75deg);
-  font-family: 'OpenSans-Bold';
+  font-family: "OpenSans-Bold";
   text-transform: uppercase;
 }
 
@@ -3375,7 +3286,7 @@ div.employee {
   width: 0;
   height: 0;
   border: 0.5em solid transparent;
-  content: '';
+  content: "";
   display: inline-block;
   border-right: none;
   border-left-color: #fff;
