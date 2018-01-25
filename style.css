@@ -4028,11 +4028,10 @@ http://flickity.metafizzy.co
 }
 .home .home-ownership-wrapper {
   background-color: #fff;
-  background-size: cover;
   position: relative;
   z-index: 5;
   width: 100%;
-  height: auto;
+  color: #454545;
 }
 .home .home-ownership-wrapper:after {
   content: "";
@@ -4041,8 +4040,19 @@ http://flickity.metafizzy.co
   bottom: 0;
   left: 0;
   position: absolute;
-  background-color: #fff;
-  opacity: 0.7;
+  background-color: #ebebeb;
+  opacity: 0.8;
+}
+.home .home-ownership-wrapper h2 {
+  color: #345174;
+  font-family: "Cabin-Bold";
+}
+.home .home-ownership-wrapper h3 {
+  font-family: "Cabin-Bold";
+}
+.home .home-ownership-wrapper a.btn {
+  display: block;
+  text-align: center;
 }
 .home .home-ownership-wrapper img {
   -o-object-fit: cover;
@@ -4070,9 +4080,6 @@ http://flickity.metafizzy.co
         -ms-flex-align: center;
             align-items: center;
   }
-}
-.home .home-ownership-wrapper .home-ownership-inner-wrapper h2 {
-  color: #345174;
 }
 
 /*# sourceMappingURL=style.css.map */

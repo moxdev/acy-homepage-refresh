@@ -491,19 +491,10 @@
 
   .home-ownership-wrapper {
     background-color: #fff;
-    background-size: cover;
     position: relative;
     z-index: 5;
     width: 100%;
-    height: auto;
-
-    @include respond-to(small) {
-      // height: auto;
-    }
-
-    @include respond-to(large) {
-      // height: auto;
-    }
+    color: #454545;
 
     &:after {
       content: "";
@@ -512,8 +503,23 @@
       bottom: 0;
       left: 0;
       position: absolute;
-      background-color: #fff;
-      opacity: 0.7;
+      background-color: #ebebeb;
+      // background-color: #fff;
+      opacity: 0.8;
+    }
+
+    h2 {
+      color: #345174;
+      font-family: $font_bold;
+    }
+
+    h3 {
+      font-family: $font_bold;
+    }
+
+    a.btn {
+      display: block;
+      text-align: center;
     }
 
     img {
@@ -534,10 +540,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-
-      h2 {
-        color: #345174;
       }
     }
   }

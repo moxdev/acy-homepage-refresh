@@ -20,13 +20,11 @@ function atlantic_cruising_yachts_homepage_highlights_section() {
           $highlight_url    = get_sub_field('highlight_link'); ?>
 
           <div class="highlights-wrapper">
-            <img src="<?php echo esc_url( $highlight_img['sizes']['learn-more-background-image'] ); ?>" alt="<?php echo esc_attr( $highlight_img['alt'] ); ?>" description="<?php echo esc_attr( $highlight_img['description'] ); ?>">
+            <img src="<?php echo esc_url( $highlight_img['sizes']['highlight-background-image'] ); ?>" alt="<?php echo esc_attr( $highlight_img['alt'] ); ?>" description="<?php echo esc_attr( $highlight_img['description'] ); ?>">
 
             <div class="link-wrapper">
               <a href="<?php echo esc_attr( $highlight_url ); ?>"><?php echo esc_html( $highlight_title ); ?></a>
             </div>
-
-
           </div>
 
           <?php endwhile; ?>
