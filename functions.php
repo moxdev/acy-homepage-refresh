@@ -41,7 +41,8 @@ function atlantic_cruising_yachts_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('home-feature', 1200, 470, true);
 	add_image_size('home-main-content', 300, 9999, true);
-	add_image_size('testimonial-background-image', 1800, 750, true);
+  add_image_size('testimonial-background-image', 1800, 750, true);
+	add_image_size('learn-more-background-image', 1024, 683, true);
   add_image_size('yacht-feature', 1800, 750, true);
 	add_image_size('yacht-lightbox-thumb', 75, 75, true);
 	add_image_size('staff-headshot', 240, 240, true);

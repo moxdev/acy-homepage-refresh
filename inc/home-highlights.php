@@ -1,7 +1,7 @@
 <?php
 /**
  * Custom function for homepage
- * 
+ *
  * @package Atlantic Cruising Yachts
  */
 
@@ -14,19 +14,27 @@ function atlantic_cruising_yachts_homepage_highlights_section() {
       <?php if( have_rows('home_highlights') ) { ?>
         <div class="home-highlights">
           <?php while ( have_rows('home_highlights') ) : the_row();
-          $title = get_sub_field('highlight_title');
-          $img = get_sub_field('highlight_image');
-          $url = get_sub_field('highlight_link'); ?>
-          <a href="<?php echo esc_attr( $url ); ?>">
-            <span><?php echo esc_html( $title ); ?></span>
-            <img src="<?php echo esc_attr( $img['sizes']['large'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>">
-          </a>
+
+          $highlight_title  = get_sub_field('highlight_title');
+          $highlight_img    = get_sub_field('highlight_image');
+          $highlight_url    = get_sub_field('highlight_link'); ?>
+
+          <div class="highlights-wrapper">
+            <img src="<?php echo esc_url( $highlight_img['sizes']['learn-more-background-image'] ); ?>" alt="<?php echo esc_attr( $highlight_img['alt'] ); ?>" description="<?php echo esc_attr( $highlight_img['description'] ); ?>">
+
+            <div class="link-wrapper">
+              <a href="<?php echo esc_attr( $highlight_url ); ?>"><?php echo esc_html( $highlight_title ); ?></a>
+            </div>
+
+
+          </div>
+
           <?php endwhile; ?>
         </div>
       <?php } ?>
 
     </section>
-    
+
     <?php
   }
 }

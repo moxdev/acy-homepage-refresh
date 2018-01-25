@@ -387,7 +387,7 @@ h1 {
   margin-bottom: 0;
 }
 
-h2, .home .home-highlights a span {
+h2 {
   text-transform: uppercase;
   font-size: 1.4em;
   line-height: 1.2;
@@ -2566,7 +2566,7 @@ object {
   margin-bottom: 0;
 }
 
-.page-template-page-yacht #video-wrapper h2, .page-template-page-yacht #video-wrapper .home .home-highlights a span, .home .home-highlights a .page-template-page-yacht #video-wrapper span {
+.page-template-page-yacht #video-wrapper h2 {
   display: none;
 }
 
@@ -2575,7 +2575,7 @@ object {
   background-color: #d7d7d8;
 }
 
-.page-template-page-yacht #specs-wrapper h2, .page-template-page-yacht #specs-wrapper .home .home-highlights a span, .home .home-highlights a .page-template-page-yacht #specs-wrapper span {
+.page-template-page-yacht #specs-wrapper h2 {
   color: #fff;
   background-color: #ab0634;
   padding: 0.35em 0.75em;
@@ -2732,17 +2732,15 @@ object {
   text-align: center;
 }
 
-.staff-listing h2, .staff-listing .home .home-highlights a span, .home .home-highlights a .staff-listing span {
+.staff-listing h2 {
   width: 100%;
   margin: 0 0 1em 0;
   position: relative;
   padding: 0.5em 0 0 0;
 }
 
-.staff-listing h2:before, .staff-listing .home .home-highlights a span:before, .home .home-highlights a .staff-listing span:before,
-.staff-listing h2:after,
-.staff-listing .home .home-highlights a span:after,
-.home .home-highlights a .staff-listing span:after {
+.staff-listing h2:before,
+.staff-listing h2:after {
   border-bottom: 1px dashed #99999a;
   content: "";
   display: block;
@@ -2752,7 +2750,7 @@ object {
   top: 0;
 }
 
-.staff-listing h2:before, .staff-listing .home .home-highlights a span:before, .home .home-highlights a .staff-listing span:before {
+.staff-listing h2:before {
   top: -6px;
 }
 
@@ -3261,7 +3259,7 @@ div.employee {
   margin: 0.25em 0 0;
 }
 
-.home-modal h2, .home-modal .home .home-highlights a span, .home .home-highlights a .home-modal span {
+.home-modal h2 {
   font-family: "OpenSans-Bold";
   color: #ffd63b;
   text-transform: uppercase;
@@ -3574,9 +3572,7 @@ http://flickity.metafizzy.co
   font-family: "Cabin-Regular";
 }
 .home #page h1,
-.home #page h2,
-.home #page .home-highlights a span,
-.home .home-highlights a #page span {
+.home #page h2 {
   text-transform: none;
 }
 .home a.btn {
@@ -3674,7 +3670,7 @@ http://flickity.metafizzy.co
   color: #345174;
   font-family: "Cabin-Bold";
 }
-.home .entry-header h2, .home .entry-header .home-highlights a span, .home .home-highlights a .entry-header span {
+.home .entry-header h2 {
   font-family: "Cabin-Regular";
   color: #345174;
 }
@@ -3863,7 +3859,7 @@ http://flickity.metafizzy.co
 .home .home-learn-more {
   text-align: center;
 }
-.home .home-learn-more h2, .home .home-learn-more .home-highlights a span, .home .home-highlights a .home-learn-more span {
+.home .home-learn-more h2 {
   font-family: "Cabin-Bold";
   color: #525252;
   padding-top: 1em;
@@ -3952,32 +3948,8 @@ http://flickity.metafizzy.co
             flex: 0 0 50%;
   }
 }
-.home .home-highlights {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.home .home-highlights a {
-  display: block;
+.home .home-highlights .highlights-wrapper {
   position: relative;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  height: 200px;
-}
-.home .home-highlights a span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 5;
-  color: #fff;
-  text-shadow: 0 0 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3987,41 +3959,71 @@ http://flickity.metafizzy.co
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: color 0.125s;
-  transition: color 0.125s;
+  height: 200px;
 }
-.home .home-highlights a img {
-  display: block;
+.home .home-highlights .highlights-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
   font-family: "object-fit: cover";
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 0.125s;
-  transition: opacity 0.125s;
+  position: absolute;
+  z-index: -1;
 }
-.home .home-highlights a:hover span {
+.home .home-highlights a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: block;
+  font-family: "Cabin-Bold";
+  position: relative;
+  z-index: 10;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em 1.5em;
+  width: 230px;
+  text-align: center;
+  text-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+}
+.home .home-highlights a:hover, .home .home-highlights a:active {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5), 0 0 1.5em rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5), 0 0 1.5em rgba(0, 0, 0, 0.7);
   color: #000;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.home .home-highlights a:hover img {
-  opacity: 0.1;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media screen and (min-width: 575px) {
+  .home .home-highlights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .home .home-highlights a {
+    margin: 0 1em;
+  }
+  .home .home-highlights .highlights-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
   }
 }
 @media screen and (min-width: 750px) {
-  .home .home-highlights a {
-    height: 275px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .home .home-highlights a {
-    height: 350px;
+  .home .home-highlights {
+    height: 400px;
   }
 }
 .home .home-ownership-wrapper {
@@ -4069,7 +4071,7 @@ http://flickity.metafizzy.co
             align-items: center;
   }
 }
-.home .home-ownership-wrapper .home-ownership-inner-wrapper h2, .home .home-ownership-wrapper .home-ownership-inner-wrapper .home-highlights a span, .home .home-highlights a .home-ownership-wrapper .home-ownership-inner-wrapper span {
+.home .home-ownership-wrapper .home-ownership-inner-wrapper h2 {
   color: #345174;
 }
 
