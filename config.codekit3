@@ -91,6 +91,99 @@
 		"oAP": "\/error_log",
 		"oF": 0
 		},
+	"\/fonts\/Cabin-Bold.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Cabin-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Cabin-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Italic.eot",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Cabin-Italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Cabin-Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Italic.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Italic.woff",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Regular.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Regular.eot",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Cabin-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Cabin-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Regular.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Cabin-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Cabin-Regular.woff",
+		"oF": 0
+		},
 	"\/fonts\/OpenSans-Bold.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -1261,6 +1354,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/_footer-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/_footer-refresh.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/_home-page-refresh.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1273,6 +1373,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/_main-css.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/footer-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/footer-refresh.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/home-page-refresh.scssc": {
@@ -1366,6 +1473,19 @@
 		"oAP": "\/sass\/.sass-cache\/e9a1faf25533027478ef090b42edefc6298f6d39\/_variables-site.scssc",
 		"oF": 0
 		},
+	"\/sass\/_footer-refresh.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/_footer-refresh.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/_home-page-refresh.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1440,6 +1560,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/variables\/_breakpoints.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/variables\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/variables\/_typography.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
