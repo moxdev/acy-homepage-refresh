@@ -30,13 +30,10 @@ function atlantic_cruising_yachts_homepage_testimonial_section() {
 
             <?php if ( $testimonial_img ): ?>
 
-              <img src="<?php echo esc_url( $testimonial_img['sizes']['large'] ); ?>" alt="<?php echo esc_attr( $testimonial_img['alt'] ); ?>" description="<?php echo esc_attr( $testimonial_img['description'] ); ?>">
+              <img src="<?php echo esc_url( $testimonial_img['sizes']['testimonial-background-image'] ); ?>" alt="<?php echo esc_attr( $testimonial_img['alt'] ); ?>" description="<?php echo esc_attr( $testimonial_img['description'] ); ?>">
 
             <?php endif ?>
             <div class="home-testimonial-wrapper">
-
-
-
               <div class="testimonial-carousel">
 
               <?php while ( $testimonials->have_posts() ) {
@@ -49,15 +46,13 @@ function atlantic_cruising_yachts_homepage_testimonial_section() {
                     <div class="cell-wrapper">
                       <div class="excerpt-wrapper">
 
-                        <span class="excerpt"><?php echo esc_html( $excerpt ); ?></span>
-                        <span class="title"><?php the_title(); ?></span>
+                        <span class="excerpt">"<?php echo esc_html( $excerpt ); ?>"</span>
+                        <span class="title">&mdash; &nbsp; <?php the_title(); ?></span>
 
                       </div>
 
                       <div class="testimonial-content-wrapper">
                         <?php the_content(); ?>
-
-                        <a class="btn" href="<?php echo esc_attr( $testimonial_page_link ); ?>"><?php echo esc_html( $testimonial_btn_text ); ?></a>
                       </div>
 
                     </div>
@@ -68,12 +63,13 @@ function atlantic_cruising_yachts_homepage_testimonial_section() {
               } ?>
 
               </div><!-- testimonial-carousel -->
+
+              <a class="btn" href="<?php echo esc_attr( $testimonial_page_link ); ?>"><?php echo esc_html( $testimonial_btn_text ); ?></a>
+
             </div><!-- home-testimonial-wrapper -->
           </section>
 
         <?php
-        } else {
-            echo '<h4>There were no Testimonials found. Please add a testimonial in your Dashboard or remove the testimonial section from the page.</h4>';
         }
         // Restore original Post Data
         wp_reset_postdata();

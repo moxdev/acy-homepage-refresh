@@ -18,6 +18,7 @@
     text-decoration: none;
     width: 250px;
     margin: 0 auto;
+    text-align: center;
   }
 
   .pg-feature-img,
@@ -106,6 +107,7 @@
     }
   }
 
+  // ===== MAIN CONTENT========
   .entry-header {
     h1 {
       margin-top: 0.5em;
@@ -151,6 +153,12 @@
       }
     }
 
+    #primary {
+      transform: skewY(-5deg);
+      float: none;
+      width: 100%;
+    }
+
     @include respond-to(x-small) {
       margin-top: -2.625rem;
     }
@@ -181,12 +189,6 @@
     @include respond-to(x-large) {
       margin-top: -6.625rem;
     }
-
-    #primary {
-      transform: skewY(-5deg);
-      float: none;
-      width: 100%;
-    }
   }
 
   @keyframes bounce {
@@ -201,20 +203,17 @@
     }
   }
 
-  // Testimonial Section
+  // ==== TESTIMONIAL SECTION ======
+
   .home-testimonial {
     background-color: #ab0534;
     color: #fff;
     position: relative;
     z-index: 5;
     width: 100%;
-    height: auto;
-    // padding-left: 1.2em;
-    // padding-right: 1.2em;
-    // padding-top: 8em;
-    // margin-top: -3em;
-    // padding-bottom: 4em;
-    // background-size: cover;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     &:after {
       content: "";
@@ -224,7 +223,7 @@
       left: 0;
       position: absolute;
       background-color: #ab0534;
-      opacity: 0.7;
+      opacity: 0.8;
     }
 
     img {
@@ -239,17 +238,23 @@
     .home-testimonial-wrapper {
       position: relative;
       z-index: 10;
-      padding-top: 10em;
-      padding-bottom: 5em;
       margin-top: -3em;
+      padding-top: 7em;
+      padding-left: 1.2em;
+      padding-right: 1.2em;
+      padding-bottom: 5em;
+
+      a {
+        display: block;
+      }
     }
 
     .testimonial-carousel {
       color: #fff;
-      // text-align: left;
-      // max-width: 1000px;
       padding-left: 2em;
       padding-right: 2em;
+      padding-bottom: 2em;
+      height: 100%;
 
       blockquote {
         letter-spacing: 0.7px;
@@ -260,16 +265,32 @@
         width: 100%;
         height: auto;
         margin-left: 20px;
+
+        span {
+          display: block;
+        }
+
+        .excerpt {
+          font-size: 2em;
+          line-height: 1.2;
+          font-family: $font_bold;
+        }
+
+        .title {
+          padding: 1em 0;
+          font-family: $font_it;
+        }
       }
 
       // Custom Flickity Styles
 
       /* big buttons, no circle */
       .flickity-prev-next-button {
-        // width: 13px;
-        // height: 24px;
-        // background: transparent;
-        // overflow: hidden;
+        width: 13px;
+        height: 24px;
+        background: transparent;
+        overflow: hidden;
+        display: none; // display at larger size
       }
       .flickity-prev-next-button:hover {
         // background: transparent;

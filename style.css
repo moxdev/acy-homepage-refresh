@@ -3587,6 +3587,7 @@ http://flickity.metafizzy.co
   text-decoration: none;
   width: 250px;
   margin: 0 auto;
+  text-align: center;
 }
 .home .pg-feature-img,
 .home .pg-video {
@@ -3704,6 +3705,12 @@ http://flickity.metafizzy.co
 .home #content .right-side img {
   max-width: 250px;
 }
+.home #content #primary {
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  float: none;
+  width: 100%;
+}
 @media screen and (min-width: 575px) {
   .home #content {
     margin-top: -2.625rem;
@@ -3747,12 +3754,6 @@ http://flickity.metafizzy.co
     margin-top: -6.625rem;
   }
 }
-.home #content #primary {
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  float: none;
-  width: 100%;
-}
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translate3D(0, 0, 0);
@@ -3787,7 +3788,9 @@ http://flickity.metafizzy.co
   position: relative;
   z-index: 5;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .home .home-testimonial:after {
   content: "";
@@ -3797,7 +3800,7 @@ http://flickity.metafizzy.co
   left: 0;
   position: absolute;
   background-color: #ab0534;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .home .home-testimonial img {
   -o-object-fit: cover;
@@ -3811,14 +3814,21 @@ http://flickity.metafizzy.co
 .home .home-testimonial .home-testimonial-wrapper {
   position: relative;
   z-index: 10;
-  padding-top: 10em;
-  padding-bottom: 5em;
   margin-top: -3em;
+  padding-top: 7em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-bottom: 5em;
+}
+.home .home-testimonial .home-testimonial-wrapper a {
+  display: block;
 }
 .home .home-testimonial .testimonial-carousel {
   color: #fff;
   padding-left: 2em;
   padding-right: 2em;
+  padding-bottom: 2em;
+  height: 100%;
   /* big buttons, no circle */
   /* arrow color */
 }
@@ -3830,6 +3840,25 @@ http://flickity.metafizzy.co
   width: 100%;
   height: auto;
   margin-left: 20px;
+}
+.home .home-testimonial .testimonial-carousel .cell span {
+  display: block;
+}
+.home .home-testimonial .testimonial-carousel .cell .excerpt {
+  font-size: 2em;
+  line-height: 1.2;
+  font-family: "Cabin-Bold";
+}
+.home .home-testimonial .testimonial-carousel .cell .title {
+  padding: 1em 0;
+  font-family: "Cabin-Italic";
+}
+.home .home-testimonial .testimonial-carousel .flickity-prev-next-button {
+  width: 13px;
+  height: 24px;
+  background: transparent;
+  overflow: hidden;
+  display: none;
 }
 .home .home-learn-more img {
   display: block;
