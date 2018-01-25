@@ -336,8 +336,21 @@
     }
   }
 
-  // Learn More Section
+  // ==== LEARN MORE SECTION ======
   .home-learn-more {
+    text-align: center;
+
+    h2 {
+      font-family: $font_bold;
+      color: #525252;
+      padding-top: 1em;
+    }
+
+    a.btn {
+      display: block;
+      margin-top: 2em;
+    }
+
     img {
       display: block;
       object-fit: cover;

@@ -3860,6 +3860,18 @@ http://flickity.metafizzy.co
   overflow: hidden;
   display: none;
 }
+.home .home-learn-more {
+  text-align: center;
+}
+.home .home-learn-more h2, .home .home-learn-more .home-highlights a span, .home .home-highlights a .home-learn-more span {
+  font-family: "Cabin-Bold";
+  color: #525252;
+  padding-top: 1em;
+}
+.home .home-learn-more a.btn {
+  display: block;
+  margin-top: 2em;
+}
 .home .home-learn-more img {
   display: block;
   -o-object-fit: cover;
