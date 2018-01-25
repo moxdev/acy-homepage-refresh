@@ -11,6 +11,7 @@
 		<div class="main-content-wrapper">
 			<div class="left-side">
 				<header class="entry-header">
+					<span class="gray"></span><span class="blue"></span><span class="red"></span>
 					<?php $title = get_field('on_page_title');
 						$sub_title = get_field('sub_title');
 
@@ -18,10 +19,10 @@
 						<h1 class="entry-title"><?php echo $title; ?></h1>
 
 						<?php if($sub_title) { ?>
-				
+
 							<h2><?php echo esc_html( $sub_title ); ?></h2>
 
-						<?php 
+						<?php
 						}
 					}else {
 						the_title( '<h1 class="entry-title">', '</h1>' );
@@ -30,6 +31,8 @@
 						<?php
 						}
 					} ?>
+
+
 				</header>
 				<!-- .entry-header -->
 
@@ -54,10 +57,10 @@
 			</div><!-- left-side -->
 
 			<div class="right-side">
-				<?php if ( function_exists( 'get_field'  ) ) { 
-					$img = get_field('main_content_image'); ?>
+				<?php if ( function_exists( 'get_field'  ) ) {
+					$main_content_img = get_field('main_content_image'); ?>
 
-					<img src="<?php echo esc_url( $img['sizes']['home-main-content'] ); ?>" alt="<?php echo esc_attr( $img['alt'] ); ?>" description="<?php echo esc_attr( $img['description'] ); ?>"> 
+					<img src="<?php echo esc_url( $main_content_img['sizes']['home-main-content'] ); ?>" alt="<?php echo esc_attr( $main_content_img['alt'] ); ?>" description="<?php echo esc_attr( $main_content_img['description'] ); ?>">
 
 				<?php } ?>
 			</div><!-- right-side -->

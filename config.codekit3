@@ -400,16 +400,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/imgs\/old-sprite-icons.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/old-sprite-icons.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/imgs\/sprite-icons.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -425,6 +415,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/imgs\/sprite-iconsBK.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/sprite-social-icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/sprite-social-icons.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1464,6 +1464,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/e9a1faf25533027478ef090b42edefc6298f6d39\/_breakpoints.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e9a1faf25533027478ef090b42edefc6298f6d39\/_typography.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e9a1faf25533027478ef090b42edefc6298f6d39\/_typography.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/e9a1faf25533027478ef090b42edefc6298f6d39\/_variables-site.scssc": {
