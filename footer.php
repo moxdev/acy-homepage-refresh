@@ -77,37 +77,19 @@
 						<?php if($main_ph): ?><div class="ftr-main-phone"><a class="tel" onclick="ga('send', 'event', 'Click', 'Phone Click', 'Footer Phone Click');" href="tel:<?php echo $main_ph; ?>"<span itemprop="telephone"><?php echo $main_ph; ?></span></a></div><?php endif; ?>
 
 						<?php $fb = get_theme_mod('setting_facebook_url');
-						$li = get_theme_mod('setting_linkedin_url');
-						$yt = get_theme_mod('setting_youtube_url');
-						if($fb || $li || $yt) { ?>
+									$li = get_theme_mod('setting_linkedin_url');
+									$yt = get_theme_mod('setting_youtube_url');
 
-						<ul class="social-media">
-
-							<?php if ($fb): ?>
-
-								<li class="fb">
-									<a href="<?php echo $fb; ?>" target="_blank">Find Us On Facebook</a>
-								</li>
-
-							<?php endif ?>
-							<?php if ($li): ?>
-
-								<li class="linked">
-									<a href="<?php echo $li; ?>" target="_blank">Find Us On LinkedIn</a>
-								</li>
-
-							<?php endif ?>
-
-							<?php if ($yt): ?>
-
-								<li class="yt">
-									<a href="<?php echo $yt; ?>" target="_blank">Watch Us On YouTube</a>
-								</li>
-
-							<?php endif ?>
-
-						</ul>
-
+						if($fb || $tw || $goo || $insta || $yelp || $tripadv) { ?>
+							<ul class="ftr-social">
+								<?php if($fb): ?><li id="fb"><a href="<?php echo esc_url( $fb ); ?>" target=_blank>Find Us on Facebook</a></li><?php endif;
+								if($tw): ?><li id="tw"><a href="<?php echo esc_url( $tw ); ?>" target=_blank>Follow Us on Twitter</a></li><?php endif;
+								if($goo): ?><li id="goo"><a href="<?php echo esc_url( $goo ); ?>" target=_blank>Find Us on Google+</a></li><?php endif;
+								if($insta): ?><li id="insta"><a href="<?php echo esc_url( $insta ); ?>" target=_blank>Find Us on Instagram</a></li><?php endif;
+								if($yt): ?><li id="yt"><a href="<?php echo esc_url( $tube ); ?>" target=_blank>Watch Us on YouTube</a></li><?php endif;
+								if($yelp): ?><li id="yelp"><a href="<?php echo esc_url( $yelp ); ?>" target=_blank>Read Reviews on Yelp</a></li><?php endif;
+								if($tripadv): ?><li id="tripadv"><a href="<?php echo esc_url( $tripadv ); ?>" target=_blank>Find Us on TripAdvisor</a></li><?php endif; ?>
+							</ul>
 						<?php } ?>
 					</div><!-- contact-flex-wrapper -->
 
