@@ -154,20 +154,17 @@
 						</div><!-- .location-wrapper -->
 					</div><!-- location-flex-wrapper -->
 
+					<div class="disclaimer-wrapper">
+						<?php $disclaimer = get_theme_mod('setting_footer_disclaimer'); if($disclaimer): ?><span id="colophon-disclaimer"><?php echo $disclaimer; ?></span><?php endif; ?>
+
+						<a href="https://www.mm4solutions.com/" target="_blank" id="slug"><span>Website by: Millennium Marketing Solutions</span></a>
+					</div>
+
 				</div><!-- .site-info -->
-
-				<div class="disclaimer-wrapper">
-					<?php $disclaimer = get_theme_mod('setting_footer_disclaimer'); if($disclaimer): ?><span id="colophon-disclaimer"><?php echo $disclaimer; ?></span><?php endif; ?>
-
-					<a href="https://www.mm4solutions.com/" target="_blank" id="slug"><span>Website by: Millennium Marketing Solutions</span></a>
-				</div>
-
 			</footer><!-- #colophon -->
 		<?php } ?>
 	</div><!-- #translate-wrap -->
 </div><!-- #page -->
-
-
 
 <?php wp_footer(); ?>
 <?php if(is_page_template('frontpage.php')) { ?>

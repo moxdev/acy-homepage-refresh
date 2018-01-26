@@ -2392,7 +2392,7 @@ object {
   overflow: hidden;
   width: 40px;
   height: 40px;
-  background-image: url(imgs/sprites.svg);
+  background-image: url(imgs/sprite-social-icons.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
@@ -2414,6 +2414,7 @@ object {
 #colophon .disclaimer-wrapper {
   max-width: 1100px;
   margin: 0 auto;
+  text-align: center;
 }
 #colophon #colophon-disclaimer {
   font-size: 0.73em;
@@ -2423,6 +2424,7 @@ object {
 #colophon #slug {
   font-size: 0.6em;
   margin: 1em 0 0 0;
+  display: block;
 }
 #colophon #slug span {
   padding: 0 0.25em 0 0;
@@ -2442,6 +2444,8 @@ object {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: left;
   }
   #colophon .social-media {
@@ -2455,6 +2459,9 @@ object {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   #colophon .location-flex-wrapper {
     display: -webkit-box;
@@ -2472,6 +2479,9 @@ object {
     padding: 0 1.5em;
   }
   #colophon .disclaimer-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3918,6 +3928,32 @@ http://flickity.metafizzy.co
   overflow: hidden;
   display: none;
 }
+@media screen and (min-width: 575px) {
+  .home .home-testimonial .testimonial-carousel .flickity-prev-next-button {
+    display: block;
+  }
+}
+.home .home-testimonial .testimonial-carousel .flickity-prev-next-button:hover {
+  background: transparent;
+}
+.home .home-testimonial .testimonial-carousel .flickity-prev-next-button .arrow {
+  fill: white;
+}
+.home .home-testimonial .testimonial-carousel .flickity-prev-next-button.no-svg {
+  color: white;
+}
+@media screen and (min-width: 575px) {
+  .home .home-testimonial .testimonial-carousel {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+@media screen and (min-width: 950px) {
+  .home .home-testimonial .testimonial-carousel {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
 @media screen and (min-width: 950px) {
   .home .home-testimonial .home-testimonial-wrapper {
     padding-top: 10em;
@@ -4088,7 +4124,7 @@ http://flickity.metafizzy.co
   -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5), 0 0 1.5em rgba(0, 0, 0, 0.7);
           box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5), 0 0 1.5em rgba(0, 0, 0, 0.7);
   opacity: 0.7;
-  color: #000;
+  color: #ab0534;
   text-shadow: none;
   -webkit-box-shadow: none;
           box-shadow: none;

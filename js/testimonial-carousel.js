@@ -6,7 +6,6 @@ var flkty = new Flickity(elem, {
   pageDots: false,
   setGallerySize: true,
   groupCells: true,
-  // autoPlay: false,
   autoPlay: 7000,
   resize: true,
   selectedAttraction: 0.01,
