@@ -12,6 +12,7 @@
 			<div class="left-side">
 				<header class="entry-header">
 					<span class="gray"></span><span class="blue"></span><span class="red"></span>
+
 					<?php $title = get_field('on_page_title');
 						$sub_title = get_field('sub_title');
 
@@ -60,7 +61,7 @@
 				<?php if ( function_exists( 'get_field'  ) ) {
 					$main_content_img = get_field('main_content_image'); ?>
 
-					<img src="<?php echo esc_url( $main_content_img['sizes']['home-main-content'] ); ?>" alt="<?php echo esc_attr( $main_content_img['alt'] ); ?>" description="<?php echo esc_attr( $main_content_img['description'] ); ?>">
+					<img src="<?php echo esc_url( $main_content_img['sizes']['home-main-content-image'] ); ?>" alt="<?php echo esc_attr( $main_content_img['alt'] ); ?>" description="<?php echo esc_attr( $main_content_img['description'] ); ?>">
 
 				<?php } ?>
 			</div><!-- right-side -->

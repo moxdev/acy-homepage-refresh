@@ -3699,7 +3699,7 @@ http://flickity.metafizzy.co
   text-align: center;
 }
 .home #content .right-side img {
-  max-width: 250px;
+  width: 250px;
 }
 .home #content #primary {
   -webkit-transform: skewY(-5deg);
@@ -3712,11 +3712,7 @@ http://flickity.metafizzy.co
     margin-top: -2.625rem;
   }
 }
-@media screen and (min-width: 750px) {
-  .home #content {
-    padding-top: 4.5rem;
-    margin-top: -3.625rem;
-  }
+@media screen and (min-width: 650px) {
   .home #content .main-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3724,19 +3720,30 @@ http://flickity.metafizzy.co
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .home #content .main-content-wrapper .left-side {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+    padding-right: 1em;
   }
   .home #content .main-content-wrapper .right-side {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    padding-top: 2em;
+  }
+  .home #content .main-content-wrapper .right-side img {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .home #content {
+    padding-top: 4.5rem;
+    margin-top: -3.625rem;
   }
 }
 @media screen and (min-width: 1200px) {

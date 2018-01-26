@@ -149,7 +149,7 @@
       text-align: center;
 
       img {
-        max-width: 250px;
+        width: 250px;
       }
     }
 
@@ -163,22 +163,30 @@
       margin-top: -2.625rem;
     }
 
-    @include respond-to(small) {
-      padding-top: 4.5rem;
-      margin-top: -3.625rem;
-
+    @media screen and (min-width: 650px) {
       .main-content-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
         .left-side {
           flex: 2;
+          padding-right: 1em;
         }
         .right-side {
           flex: 1;
+          padding-top: 2em;
+
+          img {
+            width: 200px;
+          }
         }
       }
+    }
+
+    @include respond-to(small) {
+      padding-top: 4.5rem;
+      margin-top: -3.625rem;
     }
 
     @include respond-to(large) {
