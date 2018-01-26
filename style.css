@@ -3570,6 +3570,7 @@ http://flickity.metafizzy.co
   background-color: #fff;
   color: #525252;
   font-family: "Cabin-Regular";
+  line-height: 1.7;
 }
 .home #page h1,
 .home #page h2 {
@@ -3584,6 +3585,8 @@ http://flickity.metafizzy.co
   width: 250px;
   margin: 0 auto;
   text-align: center;
+  font-family: "Cabin-Bold";
+  line-height: 1.5;
 }
 .home .pg-feature-img,
 .home .pg-video {
@@ -3699,7 +3702,7 @@ http://flickity.metafizzy.co
   text-align: center;
 }
 .home #content .right-side img {
-  width: 250px;
+  width: 170px;
 }
 .home #content #primary {
   -webkit-transform: skewY(-5deg);
@@ -3713,6 +3716,10 @@ http://flickity.metafizzy.co
   }
 }
 @media screen and (min-width: 650px) {
+  .home #content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .home #content .main-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3742,7 +3749,6 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   .home #content {
-    padding-top: 4.5rem;
     margin-top: -3.625rem;
   }
 }
@@ -3816,6 +3822,9 @@ http://flickity.metafizzy.co
 }
 .home .home-testimonial .home-testimonial-wrapper {
   position: relative;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 10;
   margin-top: -3em;
   padding-top: 7em;
@@ -3834,10 +3843,6 @@ http://flickity.metafizzy.co
   height: 100%;
   /* big buttons, no circle */
   /* arrow color */
-}
-.home .home-testimonial .testimonial-carousel blockquote {
-  letter-spacing: 0.7px;
-  font-size: 1.2em;
 }
 .home .home-testimonial .testimonial-carousel .cell {
   width: 100%;
@@ -3863,6 +3868,36 @@ http://flickity.metafizzy.co
   overflow: hidden;
   display: none;
 }
+@media screen and (min-width: 950px) {
+  .home .home-testimonial .home-testimonial-wrapper {
+    padding-top: 8em;
+  }
+  .home .home-testimonial .cell-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home .home-testimonial .cell-wrapper p {
+    margin-bottom: 0;
+  }
+  .home .home-testimonial .excerpt-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-right: 2em;
+  }
+  .home .home-testimonial .testimonial-content-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .home .home-testimonial a.btn {
+    margin-right: 22%;
+  }
+}
 .home .home-learn-more {
   text-align: center;
 }
@@ -3881,17 +3916,7 @@ http://flickity.metafizzy.co
      object-fit: cover;
   font-family: "object-fit: cover";
   width: 100%;
-  height: 200px;
-}
-@media screen and (min-width: 750px) {
-  .home .home-learn-more img {
-    height: 275px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .home .home-learn-more img {
-    height: 350px;
-  }
+  height: auto;
 }
 .home .home-learn-more span {
   display: block;
@@ -3900,59 +3925,42 @@ http://flickity.metafizzy.co
 .home .home-learn-more .home-sub-content-inner-wrapper {
   padding-bottom: 2em;
 }
-.home .home-learn-more .home-sub-content-wrapper.col-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
-@media screen and (min-width: 575px) {
-  .home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-  }
-}
-.home .home-learn-more .home-sub-content-wrapper.col-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.home .home-learn-more .home-sub-content-wrapper.col-3 .home-sub-content-inner-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
 @media screen and (min-width: 750px) {
-  .home .home-learn-more .home-sub-content-wrapper.col-3 .home-sub-content-inner-wrapper {
+  .home .home-learn-more .home-sub-content-wrapper.col-2,
+  .home .home-learn-more .home-sub-content-wrapper.col-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper,
+  .home .home-learn-more .home-sub-content-wrapper.col-4 .home-sub-content-inner-wrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 33%;
-            flex: 0 0 33%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
-.home .home-learn-more .home-sub-content-wrapper.col-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.home .home-learn-more .home-sub-content-wrapper.col-4 .home-sub-content-inner-wrapper {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 750px) and (min-width: 575px) {
+  .home .home-learn-more .home-sub-content-wrapper.col-2 .home-sub-content-inner-wrapper,
   .home .home-learn-more .home-sub-content-wrapper.col-4 .home-sub-content-inner-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .home .home-learn-more .home-sub-content-wrapper.col-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .home-learn-more .home-sub-content-wrapper.col-3 .home-sub-content-inner-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
   }
 }
 .home .home-highlights .highlights-wrapper {
