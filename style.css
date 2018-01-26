@@ -2351,6 +2351,7 @@ object {
   font-family: "Cabin-Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 2em;
 }
 #colophon a {
   color: #fff;
@@ -2358,6 +2359,8 @@ object {
 }
 #colophon .site-info {
   font-size: 0.8em;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 #colophon .contact-flex-wrapper svg {
   width: 155px;
@@ -2389,7 +2392,7 @@ object {
   overflow: hidden;
   width: 40px;
   height: 40px;
-  background-image: url(imgs/sprite-social-icons.svg);
+  background-image: url(imgs/sprites.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
@@ -2408,6 +2411,10 @@ object {
 #colophon .location-wrapper .colophon-address {
   display: block;
 }
+#colophon .disclaimer-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 #colophon #colophon-disclaimer {
   font-size: 0.73em;
   display: block;
@@ -2425,6 +2432,10 @@ object {
   height: 16px;
 }
 @media screen and (min-width: 575px) {
+  #colophon {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+  }
   #colophon .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2441,9 +2452,6 @@ object {
 }
 @media screen and (min-width: 750px) {
   #colophon .site-info {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -2452,12 +2460,27 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 3em;
   }
   #colophon .location-wrapper {
     margin-bottom: 1em;
     padding: 0 1em;
     line-height: 2;
+  }
+}
+@media screen and (min-width: 950px) {
+  #colophon .location-wrapper {
+    padding: 0 1.5em;
+  }
+  #colophon .disclaimer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -3587,6 +3610,8 @@ http://flickity.metafizzy.co
   text-align: center;
   font-family: "Cabin-Bold";
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .home .pg-feature-img,
 .home .pg-video {
@@ -3649,9 +3674,19 @@ http://flickity.metafizzy.co
     bottom: 1.5em;
   }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1450px) {
   .home .pg-video #scroll_btn {
     bottom: 2.5em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .home .pg-video #scroll_btn {
+    bottom: 3.5em;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .home .pg-video #scroll_btn {
+    bottom: 5.5em;
   }
 }
 .no-videoautoplay .home.loaded .pg-feature-img, .videoautoplay .home.loaded .pg-feature-img {
@@ -3752,15 +3787,30 @@ http://flickity.metafizzy.co
     margin-top: -3.625rem;
   }
 }
+@media screen and (min-width: 950px) {
+  .home #content {
+    margin-bottom: -4em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .home #content {
     margin-top: -4.625rem;
-    padding-bottom: 8rem;
   }
 }
 @media screen and (min-width: 1450px) {
   .home #content {
-    margin-top: -6.625rem;
+    margin-top: -8.625rem;
+    margin-bottom: -8em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .home #content {
+    margin-top: -10.625rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .home #content {
+    margin-top: -15.625rem;
   }
 }
 @-webkit-keyframes bounce {
@@ -3870,7 +3920,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 950px) {
   .home .home-testimonial .home-testimonial-wrapper {
-    padding-top: 8em;
+    padding-top: 10em;
   }
   .home .home-testimonial .cell-wrapper {
     display: -webkit-box;
@@ -3898,6 +3948,11 @@ http://flickity.metafizzy.co
     margin-right: 22%;
   }
 }
+@media screen and (min-width: 1450px) {
+  .home .home-testimonial .home-testimonial-wrapper {
+    padding-top: 14em;
+  }
+}
 .home .home-learn-more {
   text-align: center;
 }
@@ -3921,6 +3976,11 @@ http://flickity.metafizzy.co
 .home .home-learn-more span {
   display: block;
   padding: 0 1.2em;
+}
+@media screen and (min-width: 575px) {
+  .home .home-learn-more span {
+    padding: 0 1.6em;
+  }
 }
 .home .home-learn-more .home-sub-content-inner-wrapper {
   padding-bottom: 2em;
@@ -3970,6 +4030,10 @@ http://flickity.metafizzy.co
   .home .home-learn-more {
     font-size: 1em;
   }
+}
+.home .home-highlights {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .home .home-highlights .highlights-wrapper {
   position: relative;
@@ -4029,6 +4093,11 @@ http://flickity.metafizzy.co
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+@media screen and (min-width: 425px) {
+  .home .home-highlights .highlights-wrapper {
+    height: 250px;
+  }
+}
 @media screen and (min-width: 575px) {
   .home .home-highlights {
     display: -webkit-box;
@@ -4044,11 +4113,7 @@ http://flickity.metafizzy.co
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-  }
-}
-@media screen and (min-width: 425px) {
-  .home .home-highlights .highlights-wrapper {
-    height: 250px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 950px) {
@@ -4086,6 +4151,8 @@ http://flickity.metafizzy.co
 .home .home-ownership-wrapper h2 {
   color: #345174;
   font-family: "Cabin-Bold";
+  font-size: 2em;
+  line-height: 1.2;
 }
 .home .home-ownership-wrapper h3 {
   font-family: "Cabin-Bold";
@@ -4104,21 +4171,49 @@ http://flickity.metafizzy.co
   z-index: -1;
 }
 .home .home-ownership-wrapper .home-ownership-inner-wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 2em 1.2em;
   position: relative;
   z-index: 10;
+}
+@media screen and (min-width: 575px) {
+  .home .home-ownership-wrapper .home-ownership-inner-wrapper {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+  }
 }
 @media screen and (min-width: 950px) {
   .home .home-ownership-wrapper .home-ownership-inner-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .home .home-ownership-wrapper .home-ownership-inner-wrapper a.btn {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .home .home-ownership-wrapper .home-ownership-inner-wrapper h2 {
+    font-size: 2.3em;
+    padding-right: 1em;
+  }
+  .home .home-ownership-wrapper .home-ownership-inner-wrapper .header-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    padding-bottom: 6em;
+  }
+  .home .home-ownership-wrapper .home-ownership-inner-wrapper .content-wrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
   }
 }
 

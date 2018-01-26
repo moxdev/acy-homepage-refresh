@@ -26,7 +26,9 @@ function atlantic_cruising_yachts_homepage_ownership_section() {
 
             <?php if ($split_section_title): ?>
 
-              <h2><?php echo esc_html( $split_section_title ); ?></h2>
+              <div class="header-wrapper">
+                <h2><?php echo esc_html( $split_section_title ); ?></h2>
+              </div>
 
             <?php endif ?>
 

@@ -156,9 +156,11 @@
 
 				</div><!-- .site-info -->
 
-				<?php $disclaimer = get_theme_mod('setting_footer_disclaimer'); if($disclaimer): ?><span id="colophon-disclaimer"><?php echo $disclaimer; ?></span><?php endif; ?>
+				<div class="disclaimer-wrapper">
+					<?php $disclaimer = get_theme_mod('setting_footer_disclaimer'); if($disclaimer): ?><span id="colophon-disclaimer"><?php echo $disclaimer; ?></span><?php endif; ?>
 
-				<a href="https://www.mm4solutions.com/" target="_blank" id="slug"><span>Site by: Millennium Marketing Solutions</span></a>
+					<a href="https://www.mm4solutions.com/" target="_blank" id="slug"><span>Website by: Millennium Marketing Solutions</span></a>
+				</div>
 
 			</footer><!-- #colophon -->
 		<?php } ?>

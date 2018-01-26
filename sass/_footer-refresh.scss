@@ -9,6 +9,7 @@
   font-family: $font_reg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 2em;
 
   a {
     color: #fff;
@@ -17,6 +18,8 @@
 
   .site-info {
     font-size: 0.8em;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .contact-flex-wrapper {
@@ -47,7 +50,7 @@
         overflow: hidden;
         width: 40px;
         height: 40px;
-        background-image: url(imgs/sprite-social-icons.svg);
+        background-image: url(imgs/sprites.svg);
         background-size: auto 100%;
         background-repeat: no-repeat;
       }
@@ -74,6 +77,11 @@
     }
   }
 
+  .disclaimer-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
   #colophon-disclaimer {
     font-size: 0.73em;
     display: block;
@@ -94,6 +102,9 @@
   }
 
   @include respond-to(x-small) {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+
     .site-info {
       display: flex;
       justify-content: space-around;
@@ -107,19 +118,31 @@
 
   @include respond-to(small) {
     .site-info {
-      justify-content: flex-start;
+      // justify-content: flex-start;
       align-items: flex-end;
     }
 
     .location-flex-wrapper {
       display: flex;
-      margin-left: 3em;
+      // margin-left: 3em;
     }
 
     .location-wrapper {
       margin-bottom: 1em;
       padding: 0 1em;
       line-height: 2;
+    }
+  }
+
+  @include respond-to(medium) {
+    .location-wrapper {
+      padding: 0 1.5em;
+    }
+
+    .disclaimer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
     }
   }
 }
