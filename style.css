@@ -4082,21 +4082,8 @@ http://flickity.metafizzy.co
     font-size: 1em;
   }
 }
-.home .home-highlights {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .home .home-highlights .highlights-wrapper {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 200px;
 }
 .home .home-highlights .highlights-wrapper img {
@@ -4109,14 +4096,13 @@ http://flickity.metafizzy.co
   z-index: -1;
 }
 .home .home-highlights a {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  -ms-flex-item-align: center;
-      align-self: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: block;
   font-family: "Cabin-Bold";
-  position: relative;
   z-index: 10;
   text-transform: uppercase;
   text-decoration: none;
