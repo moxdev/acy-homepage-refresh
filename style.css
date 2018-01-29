@@ -3622,6 +3622,11 @@ http://flickity.metafizzy.co
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.home a.btn:hover, .home a.btn:active {
+  background-color: #446a97;
 }
 @media screen and (min-width: 1800px) {
   .home a.btn {

@@ -24,6 +24,12 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: lighten(#345174, 10%);
+    }
 
     @include respond-to(xx-large) {
       width: 300px;
