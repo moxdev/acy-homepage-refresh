@@ -474,13 +474,8 @@
   // ==== HIGHLIGHTS SECTION ======
 
   .home-highlights {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     .highlights-wrapper {
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 200px;
 
       img {
@@ -494,11 +489,12 @@
     }
 
     a {
-      flex: 0 0 100%;
-      align-self: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: block;
       font-family: $font_bold;
-      position: relative;
       z-index: 10;
       text-transform: uppercase;
       text-decoration: none;

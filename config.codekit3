@@ -7,7 +7,7 @@
 		"uuidString": "0CA54BB0-F7D5-4806-BAAA-B9AF19EA32DD"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -2292,6 +2292,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
