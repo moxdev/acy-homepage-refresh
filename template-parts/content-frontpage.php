@@ -14,21 +14,21 @@
 					<span class="gray"></span><span class="blue"></span><span class="red"></span>
 
 					<?php $title = get_field('on_page_title');
-						$sub_title = get_field('sub_title');
+						$home_sub_title = get_field('home_page_sub_title');
 
 					if($title) { ?>
 						<h1 class="entry-title"><?php echo $title; ?></h1>
 
-						<?php if($sub_title) { ?>
+						<?php if($home_sub_title) { ?>
 
-							<h2><?php echo esc_html( $sub_title ); ?></h2>
+							<h2><?php echo esc_html( $home_sub_title ); ?></h2>
 
 						<?php
 						}
 					}else {
 						the_title( '<h1 class="entry-title">', '</h1>' );
-						if($sub_title) { ?>
-							<h2><?php echo esc_html( $sub_title ); ?></h2>
+						if($home_sub_title) { ?>
+							<h2><?php echo esc_html( $home_sub_title ); ?></h2>
 						<?php
 						}
 					} ?>
