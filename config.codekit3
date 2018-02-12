@@ -253,11 +253,11 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
-	"\/frontpage.php": {
+	"\/front-page.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/frontpage.php",
+		"oAP": "\/front-page.php",
 		"oF": 0
 		},
 	"\/functions.php": {
@@ -273,6 +273,239 @@
 		"oA": 0,
 		"oAP": "\/header.php",
 		"oF": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-frontpage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-frontpage.php",
+		"oF": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/boat-inventory.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/boat-inventory-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/customizer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/customizer-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/imagelightbox.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/imagelightbox.min-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-imagefill.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-imagefill.min-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_444444_256x240.png": {
+		"ft": 32768,
+		"iS": 6992,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_444444_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_555555_256x240.png": {
+		"ft": 32768,
+		"iS": 6988,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_555555_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777620_256x240.png": {
+		"ft": 32768,
+		"iS": 4549,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777620_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777777_256x240.png": {
+		"ft": 32768,
+		"iS": 6999,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777777_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_cc0000_256x240.png": {
+		"ft": 32768,
+		"iS": 4549,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_cc0000_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_ffffff_256x240.png": {
+		"ft": 32768,
+		"iS": 6299,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_ffffff_256x240.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.min-min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.min-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.structure.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.structure.min-min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery-ui-1.11.4\/jquery-ui.theme-min.css",
+		"oF": 1,
+		"oS": 3
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery.cookie.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery.cookie.min-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/jquery.imagesloaded.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/jquery.imagesloaded.min-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/lightbox.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/lightbox-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/modal-window.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/modal-window-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/navigation-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/navigationBK.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/navigationBK-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-js\/skip-link-focus-fix.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-js\/skip-link-focus-fix-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/home-page-refresh-2018-old-files\/old-style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/home-page-refresh-2018-old-files\/old-style-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/imgs\/full-modal-footer.png": {
 		"ft": 32768,
@@ -877,25 +1110,25 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/media\/CA-FINAL-Homepage-051517.mp4": {
+	"\/media\/acy-homepage-video.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/media\/CA-FINAL-Homepage-051517.mp4",
+		"oAP": "\/media\/acy-homepage-video.mp4",
 		"oF": 0
 		},
-	"\/media\/CA-home-compressed-050117.mp4": {
+	"\/media\/old-CA-FINAL-Homepage-051517.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/media\/CA-home-compressed-050117.mp4",
+		"oAP": "\/media\/old-CA-FINAL-Homepage-051517.mp4",
 		"oF": 0
 		},
-	"\/media\/CruiseAnnapolis-Preview-031517.mp4": {
+	"\/media\/~$Y Homepage Revision Content.docx": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/media\/CruiseAnnapolis-Preview-031517.mp4",
+		"oAP": "\/media\/~$Y Homepage Revision Content.docx",
 		"oF": 0
 		},
 	"\/modal-assets\/acy-logo.gif": {
@@ -941,239 +1174,6 @@
 		"oA": 0,
 		"oAP": "\/old-for-pre-owned-page-page-inventory.php",
 		"oF": 0
-		},
-	"\/old-frontpage.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/old-frontpage.php",
-		"oF": 0
-		},
-	"\/old-js\/boat-inventory.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/boat-inventory-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/customizer.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/customizer-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/imagelightbox.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/imagelightbox.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/jquery-imagefill.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-imagefill.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_444444_256x240.png": {
-		"ft": 32768,
-		"iS": 6992,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_444444_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_555555_256x240.png": {
-		"ft": 32768,
-		"iS": 6988,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_555555_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777620_256x240.png": {
-		"ft": 32768,
-		"iS": 4549,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777620_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777777_256x240.png": {
-		"ft": 32768,
-		"iS": 6999,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_777777_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_cc0000_256x240.png": {
-		"ft": 32768,
-		"iS": 4549,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_cc0000_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_ffffff_256x240.png": {
-		"ft": 32768,
-		"iS": 6299,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/images\/ui-icons_ffffff_256x240.png",
-		"oF": 1,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/old-js\/jquery-ui-1.11.4\/jquery-ui.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/jquery-ui.min-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"\/old-js\/jquery-ui-1.11.4\/jquery-ui.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/jquery-ui.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/jquery-ui-1.11.4\/jquery-ui.structure.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/jquery-ui.structure.min-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"\/old-js\/jquery-ui-1.11.4\/jquery-ui.theme.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery-ui-1.11.4\/jquery-ui.theme-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"\/old-js\/jquery.cookie.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery.cookie.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/jquery.imagesloaded.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/jquery.imagesloaded.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/lightbox.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/lightbox-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/modal-window.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/modal-window-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/navigation.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/navigation-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/navigationBK.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/navigationBK-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-js\/skip-link-focus-fix.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/old-js\/skip-link-focus-fix-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/old-style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/old-style-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/page-broker.php": {
 		"cB": 0,
@@ -1364,6 +1364,48 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/sass\/.sass-cache\/1068ec68251fbe79a2f40adfbb11a9098cd96f3a\/_mixins-master.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1068ec68251fbe79a2f40adfbb11a9098cd96f3a\/_mixins-master.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_footer-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_footer-refresh.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_home-page-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_home-page-refresh.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_main-css.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_main-css.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_modal.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/_modal.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/style.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/.sass-cache\/1b069e540cc0fb93842525365e91d895c05d503e\/style.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/_footer-refresh.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1413,6 +1455,34 @@
 		"oAP": "\/sass\/.sass-cache\/1ec7c076f7595c8ca3594583fe33074250bfa3b9\/style.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/2fb08e72cb0c461ddd3f1bcaf88ee75dade0158f\/_flickity.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/2fb08e72cb0c461ddd3f1bcaf88ee75dade0158f\/_flickity.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_footer-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_footer-refresh.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_home-page-refresh.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_home-page-refresh.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_main-css.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/_main-css.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/home-page-refresh.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -1434,11 +1504,39 @@
 		"oAP": "\/sass\/.sass-cache\/4a116741ce4e1e5ec01c03b404e267a54c92d86e\/style.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_breakpoints.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_breakpoints.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_typography.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_typography.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_variables-site.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/877b9fa714adb9febb67444e6e832bfb7574fa7b\/_variables-site.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/b267e5cc6182968615e101a9a44e2cce4a11f8e9\/_mixins-master.scssc": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/b267e5cc6182968615e101a9a44e2cce4a11f8e9\/_mixins-master.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b71847884c20d0f6667a51d05754d0e2a7de5dce\/_flickity.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b71847884c20d0f6667a51d05754d0e2a7de5dce\/_flickity.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/bbe549d37b8e7fc3984fdaa7b4f6a90488eeb1c3\/_flickity.scssc": {
@@ -1453,6 +1551,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/c8c8fbae485e5ea001e65bf3db61e5c679449bc8\/_breakpoints.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/c8c8fbae485e5ea001e65bf3db61e5c679449bc8\/_typography.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/c8c8fbae485e5ea001e65bf3db61e5c679449bc8\/_typography.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/c8c8fbae485e5ea001e65bf3db61e5c679449bc8\/_variables-site.scssc": {
@@ -1529,6 +1634,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/_modal.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/_modal.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/mixins\/_mixins-master.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1565,7 +1683,7 @@
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
-		"oS": 1,
+		"oS": 3,
 		"uL": 0
 		},
 	"\/sass\/variables\/_breakpoints.scss": {

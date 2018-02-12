@@ -11,19 +11,19 @@
 
 		</div><!-- #content -->
 
-		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_testimonial_section' ) ) {
+		<?php if ( is_front_page() && function_exists( 'atlantic_cruising_yachts_homepage_testimonial_section' ) ) {
 			atlantic_cruising_yachts_homepage_testimonial_section();
 		} ?>
 
-		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_learn_more_section' ) ) {
+		<?php if ( is_front_page() && function_exists( 'atlantic_cruising_yachts_homepage_learn_more_section' ) ) {
 			atlantic_cruising_yachts_homepage_learn_more_section();
 		} ?>
 
-		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_highlights_section' ) ) {
+		<?php if ( is_front_page() && function_exists( 'atlantic_cruising_yachts_homepage_highlights_section' ) ) {
 			atlantic_cruising_yachts_homepage_highlights_section();
 		} ?>
 
-		<?php if ( is_page_template('frontpage.php') && function_exists( 'atlantic_cruising_yachts_homepage_ownership_section' ) ) {
+		<?php if ( is_front_page() && function_exists( 'atlantic_cruising_yachts_homepage_ownership_section' ) ) {
 			atlantic_cruising_yachts_homepage_ownership_section();
 		} ?>
 
@@ -166,11 +166,29 @@
 	</div><!-- #translate-wrap -->
 </div><!-- #page -->
 
+<!-- Pop-up Modal -->
+<div class="home-modal">
+	<div>
+		<a href="#" class="close-modal">X</a>
+		<div>
+		  <h3>Join Us!</h3>
+		  <h2>MIAMI INTERNATIONAL BOAT SHOW:<br>FEBRUARY 15-19, 2018</h2>
+		  <p>Join us for over 1,300 boats on display and learn how to offset 80-100% of new yacht costs through our Business Yacht Ownership<sup>&reg;</sup> Program</p>
+		  <a href="http://www.atlantic-cruising.com/2018-miami-boat-show/" class="modal-click-thru" target="_blank">SAVE YOUR SEAT</a>
+		  <span class="modal-tag">DISCOVER THE SMARTEST WAY TO OWN</span>
+		</div>
+		<div class="modal-footer">
+		  <img src="<?php echo get_template_directory_uri() . '/imgs/full-modal-footer.png'; ?>" alt="Atlantic Crusing Yachts logo">
+		</div>
+	</div>
+</div>
+ <!-- Pop-up Modal -->
+
 <?php wp_footer(); ?>
-<?php if(is_page_template('frontpage.php')) { ?>
+<?php if( is_front_page() ) { ?>
 <script>jQuery('.home-highlight-thumb').imagefill();</script>
 <?php } ?>
-<?php if(has_post_thumbnail() && !is_page_template('frontpage.php')) { ?>
+<?php if(has_post_thumbnail() && !is_front_page() ) { ?>
 <script>jQuery('.feature-wrapper').imagefill();</script>
 <?php } ?>
 <?php if(is_home()) {

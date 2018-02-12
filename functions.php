@@ -149,7 +149,11 @@ add_action('init', 'register_jquery');
 function atlantic_cruising_yachts_scripts() {
 	wp_enqueue_style( 'atlantic-cruising-yachts-style', get_stylesheet_uri() );
 
-	wp_enqueue_script('jquery');
+  wp_enqueue_script('jquery');
+
+  wp_register_script( 'atlantic-cruising-yachts-cookies', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'), '20162309', true );
+
+  wp_enqueue_script( 'atlantic-cruising-yachts', get_template_directory_uri() . '/js/modal-window.js', array('atlantic-cruising-yachts-cookies'), '20162309', true );
 
 	wp_enqueue_script( 'atlantic-cruising-yachts-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
 
@@ -158,7 +162,7 @@ function atlantic_cruising_yachts_scripts() {
 		wp_enqueue_script( 'atlantic-cruising-yachts-lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '20150625', true );
 	}
 
-	if(has_post_thumbnail() || is_page_template('frontpage.php')) {
+	if( has_post_thumbnail() || is_front_page() ) {
 
 		wp_enqueue_script( 'atlantic-cruising-yachts-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150610', true );
 
@@ -169,8 +173,6 @@ function atlantic_cruising_yachts_scripts() {
 		wp_register_script('atlantic-cruising-yachts-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', FALSE, FALSE, TRUE);
 
     wp_enqueue_script( 'flickity-testimonial', get_template_directory_uri() . '/js/min/flickity-min.js', array('atlantic-cruising-yachts-autoplay-detection'), false, true );
-
-    // wp_enqueue_script( 'flickity-testimonial', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('atlantic-cruising-yachts-autoplay-detection'), false, true );
 
     wp_enqueue_script( 'atlantic-cruising-yachts-testimonial', get_template_directory_uri() . '/js/min/testimonial-carousel-min.js', array('flickity-testimonial'), false, true );
 	}
@@ -198,10 +200,6 @@ function atlantic_cruising_yachts_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
-  wp_register_script( 'atlantic-cruising-yachts-cookies', get_template_directory_uri() . '/js/jquery.cookie.min.js', array('jquery'), '20162309', true );
-  wp_enqueue_script( 'atlantic-cruising-yachts', get_template_directory_uri() . '/js/modal-window.js', array('atlantic-cruising-yachts-cookies'), '20162309', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'atlantic_cruising_yachts_scripts' );
 
@@ -247,9 +245,9 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Homepage custom functions.
  */
 require get_template_directory() . '/inc/home-testimonial.php';
-require get_template_directory() . '/inc/home-ownership.php';
 require get_template_directory() . '/inc/home-learn-more.php';
 require get_template_directory() . '/inc/home-highlights.php';
+require get_template_directory() . '/inc/home-ownership.php';
 
 /**
  * REMOVE EMOJIS FOR WORDPRESS 4.2

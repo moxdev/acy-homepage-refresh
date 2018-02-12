@@ -47,27 +47,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Masthead
 # Colophon
 # Page Templates
-	## Home Page
 	## Yacht Page
 	## Staff Page
 	## Find a Yacht
 # Lightbox
 # Boat Listing
-# Modal
-# Home Refresh
+# Flickity Module for Home Page Testimonial
+# Home Page Refresh 2018
+# Modal Window
 --------------------------------------------------------------*/
 @import "variables/variables-site";
 @import "mixins/mixins-master";
 @import "main-css";
 
 /*--------------------------------------------------------------
-# Flickity
+# Flickity Module for Home Page Testimonial
 --------------------------------------------------------------*/
-
+/* Flickity v2.0.10
+http://flickity.metafizzy.co
+---------------------------------------------- */
 @import "modules/flickity";
 
 /* -----------------------------------------------------------
-# Home Refresh
+# Home Page Refresh 2018
 --------------------------------------------------------------*/
 
 @import "home-page-refresh";
+
+/*--------------------------------------------------------------
+# Modal Window
+--------------------------------------------------------------*/
+
+@import "modal";

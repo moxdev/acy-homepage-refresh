@@ -1,5 +1,5 @@
 Modernizr.on('videoautoplay', function(result) {
-  var videoSrc = '/wp-content/themes/atlantic-cruising-yachts/media/CA-FINAL-Homepage-051517.mp4';
+  var videoSrc = '/wp-content/themes/atlantic-cruising-yachts/media/acy-homepage-video.mp4';
   var wrapper = document.getElementById('home-video');
 
   if (result) {
