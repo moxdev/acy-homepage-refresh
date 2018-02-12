@@ -59,9 +59,9 @@
 
 			<div class="right-side">
 				<?php if ( function_exists( 'get_field'  ) ) {
-					$main_content_img = get_field('main_content_image'); ?>
+					$home_main_content_img = get_field('home_main_content_image'); ?>
 
-					<img src="<?php echo esc_url( $main_content_img['sizes']['home-main-content-image'] ); ?>" alt="<?php echo esc_attr( $main_content_img['alt'] ); ?>" description="<?php echo esc_attr( $main_content_img['description'] ); ?>">
+					<img src="<?php echo esc_url( $home_main_content_img['sizes']['home-main-content-image'] ); ?>" alt="<?php echo esc_attr( $home_main_content_img['alt'] ); ?>" description="<?php echo esc_attr( $home_main_content_img['description'] ); ?>">
 
 				<?php } ?>
 			</div><!-- right-side -->
