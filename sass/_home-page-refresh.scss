@@ -221,6 +221,19 @@
 
     @include respond-to(medium) {
       margin-bottom: -4em;
+
+      .main-content-wrapper {
+        margin-bottom: 1.5em;
+        h2 {
+          font-size: 1.8em;
+        }
+        .right-side {
+          img {
+            width: 250px;
+            margin-top: 1em;
+          }
+        }
+      }
     }
 
     @include respond-to(large) {
@@ -307,7 +320,7 @@
       color: #fff;
       padding-left: 2em;
       padding-right: 2em;
-      padding-bottom: 2em;
+      // padding-bottom: 2em;
       height: 100%;
 
       .cell {
@@ -369,7 +382,8 @@
 
     @include respond-to(medium) {
       .home-testimonial-wrapper {
-        padding-top: 10em;
+        padding-top: 9em;
+        padding-bottom: 3em;
       }
       .cell-wrapper {
         display: flex;
@@ -380,6 +394,19 @@
         }
       }
 
+      .testimonial-carousel {
+        .cell {
+          .excerpt {
+            font-size: 2.5em;
+          }
+        }
+
+        .flickity-prev-next-button {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
       .excerpt-wrapper {
         flex: 1;
         padding-right: 2em;
@@ -387,9 +414,11 @@
 
       .testimonial-content-wrapper {
         flex: 1;
+        padding-top: 1.5em;
       }
 
       a.btn {
+        margin-top: 1em;
         margin-right: 22%;
       }
     }
