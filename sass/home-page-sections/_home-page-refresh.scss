@@ -1,0 +1,45 @@
+.home {
+  #page {
+    background-color: #fff;
+    color: #525252;
+    font-family: $font_reg;
+    line-height: 1.7;
+
+    h1,
+    h2 {
+      text-transform: none;
+    }
+  }
+
+  a.btn {
+    color: #fff;
+    background-color: #345174;
+    padding: 0.75em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $font_bold;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: lighten(#345174, 10%);
+    }
+
+    @include respond-to(xx-large) {
+      width: 300px;
+      font-size: 1.1em;
+    }
+  }
+
+  @import "header";
+  @import "main-content";
+  @import "testimonial";
+  @import "learn-more";
+  @import "highlights";
+}
