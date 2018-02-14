@@ -168,6 +168,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 
+    #content-wrapper {
+      max-width: 1000px;
+    }
+
     .right-side {
       text-align: center;
 
@@ -224,13 +228,16 @@
 
       .main-content-wrapper {
         margin-bottom: 1.5em;
+        h1 {
+          font-size: 2.875em;
+        }
         h2 {
-          font-size: 1.8em;
+          font-size: 2.3em;
         }
         .right-side {
           img {
-            width: 250px;
-            margin-top: 1em;
+            width: 270px;
+            margin-top: 1.5em;
           }
         }
       }
