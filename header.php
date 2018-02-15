@@ -157,7 +157,10 @@ src="https://www.facebook.com/tr?id=433228223706272&ev=PageView&noscript=1"
 		wp_enqueue_script( 'atlantic-cruising-yachts-home-video', get_template_directory_uri() . '/js/min/home-video-min.js', array('atlantic-cruising-yachts-autoplay-detection'), NULL, true ); ?>
 
 		<div class="pg-video" id="home-video">
-			<a href="#content" class="btn" id="scroll_btn">&or;</a>
+			<a href="#content" class="btn" id="scroll_btn">
+				<span id="scroll-text">SCROLL TO EXPLORE</span>
+				<span id="scroll-caret"></span>
+			</a>
 		</div>
 
 		<figure class="pg-feature-img">

@@ -1,5 +1,3 @@
-// header Section
-
 .pg-feature-img,
 .pg-video {
   display: none;
@@ -44,44 +42,52 @@
     width: 100%;
   }
 
-  .arrow-text {
-    position: absolute;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: $font_bold;
-    left: 50%;
-    bottom: 5em;
-  }
-
   #scroll_btn {
-    font-size: 3em;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
     color: #fff;
+    font-family: $font_bold;
     text-transform: uppercase;
     text-shadow: 0 0 10px #000;
     text-decoration: none;
     text-align: center;
-    position: absolute;
-    left: 45%;
-    margin-left: -25px;
-    bottom: 1em;
     background: none;
-    z-index: 5;
     outline: none;
-    -webkit-appearance: none;
-    animation: bounce linear 1s infinite;
 
-    @include respond-to(small) {
-      // bottom: 1.5em;
+    #scroll-text {
+      display: block;
+    }
+    #scroll-caret {
+      border: solid#fff;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 10px;
+      transform: rotate(45deg);
+      text-shadow: 0 0 10px #000;
+    }
+
+    @include respond-to(medium) {
+      display: block;
+    }
+    @include respond-to(large) {
+      #scroll-caret {
+        // padding: 20px;
+        // border-width: 0 3px 3px 0;
+      }
     }
     @include respond-to(x-large) {
-      bottom: 2.5em;
-    }
-    @include respond-to(xx-large) {
-      bottom: 3.5em;
+      bottom: 20%;
     }
 
     @media screen and (min-width: 1900px) {
-      bottom: 5.5em;
+      bottom: 30%;
+    }
+    @media screen and (min-width: 2400px) {
+      bottom: 25%;
     }
   }
 }
