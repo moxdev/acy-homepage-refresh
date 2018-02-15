@@ -155,24 +155,25 @@ function atlantic_cruising_yachts_scripts() {
 
   wp_enqueue_script( 'atlantic-cruising-yachts', get_template_directory_uri() . '/js/modal-window.js', array('atlantic-cruising-yachts-cookies'), '20162309', true );
 
-	wp_enqueue_script( 'atlantic-cruising-yachts-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
+  wp_enqueue_script( 'atlantic-cruising-yachts-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20120206', true );
+
+  if( has_post_thumbnail() ) {
+    wp_enqueue_script( 'atlantic-cruising-yachts-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150610', true );
+    wp_enqueue_script( 'atlantic-cruising-yachts-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array('jquery'), '20150610', true );
+  }
 
 	if(is_page_template('page-yacht.php')) {
 		wp_enqueue_script( 'atlantic-cruising-yachts-lightbox-min', get_template_directory_uri() . '/js/imagelightbox.min.js', array('jquery'), '20150625', true );
 		wp_enqueue_script( 'atlantic-cruising-yachts-lightbox', get_template_directory_uri() . '/js/lightbox.js', array('jquery'), '20150625', true );
 	}
 
-	if( has_post_thumbnail() || is_front_page() ) {
-
-		wp_enqueue_script( 'atlantic-cruising-yachts-images-loaded', get_template_directory_uri() . '/js/jquery.imagesloaded.min.js', array('jquery'), '20150610', true );
-
-		wp_enqueue_script( 'atlantic-cruising-yachts-image-fill', get_template_directory_uri() . '/js/jquery-imagefill.min.js', array('jquery'), '20150610', true );
+	if( is_front_page() ) {
 
 		wp_register_script('atlantic-cruising-yachts-autoplay-detection', get_template_directory_uri() . '/js/min/modernizr-custom-min.js', FALSE, FALSE, TRUE);
 
 		wp_register_script('atlantic-cruising-yachts-object-fit-library', get_template_directory_uri() . '/js/min/ofi.min.js', FALSE, FALSE, TRUE);
 
-    wp_enqueue_script( 'flickity-testimonial', get_template_directory_uri() . '/js/min/flickity-min.js', array('atlantic-cruising-yachts-autoplay-detection'), false, true );
+    wp_enqueue_script( 'flickity-testimonial', get_template_directory_uri() . '/js/min/flickity-min.js', array('atlantic-cruising-yachts-object-fit-library'), false, true );
 
     wp_enqueue_script( 'atlantic-cruising-yachts-testimonial', get_template_directory_uri() . '/js/min/testimonial-carousel-min.js', array('flickity-testimonial'), false, true );
 	}

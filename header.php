@@ -171,7 +171,7 @@ src="https://www.facebook.com/tr?id=433228223706272&ev=PageView&noscript=1"
 	<div id="translate-wrap">
 		<div id="content" class="site-content">
 		<?php
-		if(has_post_thumbnail() && !is_page_template('frontpage.php')) { ?>
+		if( has_post_thumbnail() && !is_front_page() ) { ?>
 		<div class="feature-wrapper">
 			<?php the_post_thumbnail('yacht-feature'); ?>
 		</div>
