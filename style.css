@@ -2786,7 +2786,7 @@ object {
 }
 /* line 86, sass/_footer-refresh.scss */
 #colophon #colophon-disclaimer {
-  font-size: 0.73em;
+  font-size: 1em;
   display: block;
   margin: 3em 0 0 0;
 }
@@ -3988,10 +3988,14 @@ http://flickity.metafizzy.co
   outline: none;
 }
 /* line 61, sass/home-page-sections/_header.scss */
+.home .pg-video #scroll_btn:focus {
+  outline: 0;
+}
+/* line 65, sass/home-page-sections/_header.scss */
 .home .pg-video #scroll_btn #scroll-text {
   display: block;
 }
-/* line 64, sass/home-page-sections/_header.scss */
+/* line 68, sass/home-page-sections/_header.scss */
 .home .pg-video #scroll_btn #scroll-caret {
   border: solid #fff;
   border-width: 0 2px 2px 0;
@@ -4025,20 +4029,20 @@ http://flickity.metafizzy.co
     bottom: 25%;
   }
 }
-/* line 95, sass/home-page-sections/_header.scss */
+/* line 99, sass/home-page-sections/_header.scss */
 .no-videoautoplay .home.loaded .pg-feature-img, .videoautoplay .home.loaded .pg-feature-img {
   display: block;
 }
-/* line 100, sass/home-page-sections/_header.scss */
+/* line 104, sass/home-page-sections/_header.scss */
 .no-videoautoplay .home.loaded .pg-video {
   display: none;
 }
 @media screen and (min-width: 725px) {
-  /* line 105, sass/home-page-sections/_header.scss */
+  /* line 109, sass/home-page-sections/_header.scss */
   .videoautoplay .home.loaded .pg-video {
     display: block;
   }
-  /* line 109, sass/home-page-sections/_header.scss */
+  /* line 113, sass/home-page-sections/_header.scss */
   .videoautoplay .home.loaded .pg-feature-img {
     display: none;
   }
@@ -4521,13 +4525,17 @@ http://flickity.metafizzy.co
   text-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: opacity 0.3s, background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  transition: opacity 0.3s, background-color 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
-  transition: opacity 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s;
-  transition: opacity 0.3s, background-color 0.3s, box-shadow 0.3s, color 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-transition: background-color 0.3s, text-shadow 0.3s, color 0.3s;
+  transition: background-color 0.3s, text-shadow 0.3s, color 0.3s;
+}
+/* line 36, sass/home-page-sections/_highlights.scss */
+.home .home-highlights a:hover {
+  background-color: #fff;
+  color: #000;
+  text-shadow: none;
 }
 @media screen and (min-width: 425px) {
-  /* line 48, sass/home-page-sections/_highlights.scss */
+  /* line 44, sass/home-page-sections/_highlights.scss */
   .home .home-highlights .highlights-wrapper {
     height: 250px;
   }
@@ -4541,11 +4549,11 @@ http://flickity.metafizzy.co
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 57, sass/home-page-sections/_highlights.scss */
+  /* line 53, sass/home-page-sections/_highlights.scss */
   .home .home-highlights a {
     margin: 0 1em;
   }
-  /* line 61, sass/home-page-sections/_highlights.scss */
+  /* line 57, sass/home-page-sections/_highlights.scss */
   .home .home-highlights .highlights-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -4554,25 +4562,25 @@ http://flickity.metafizzy.co
   }
 }
 @media screen and (min-width: 975px) {
-  /* line 68, sass/home-page-sections/_highlights.scss */
+  /* line 64, sass/home-page-sections/_highlights.scss */
   .home .home-highlights a {
     width: 275px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 74, sass/home-page-sections/_highlights.scss */
+  /* line 70, sass/home-page-sections/_highlights.scss */
   .home .home-highlights .highlights-wrapper {
     height: 300px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 80, sass/home-page-sections/_highlights.scss */
+  /* line 76, sass/home-page-sections/_highlights.scss */
   .home .home-highlights .highlights-wrapper {
     height: 350px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 86, sass/home-page-sections/_highlights.scss */
+  /* line 82, sass/home-page-sections/_highlights.scss */
   .home .home-highlights a {
     width: 300px;
     font-size: 1.1em;

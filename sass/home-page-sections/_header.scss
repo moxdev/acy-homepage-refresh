@@ -58,6 +58,10 @@
     background: none;
     outline: none;
 
+    &:focus {
+      outline: 0;
+    }
+
     #scroll-text {
       display: block;
     }

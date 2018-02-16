@@ -33,13 +33,8 @@
 				<?php
 				$page_id_brokers = 1237;
 				$page_data_brokers = get_page($page_id_brokers);
-				$perma_brokers = get_permalink($page_id_brokers);
+				$perma_brokers = get_permalink($page_id_brokers); ?>
 
-				if($page_data_brokers->post_status == 'publish') { ?>
-					<!-- <a class="ftr-nav" href="<?php // echo $perma_brokers; ?>">Brokers Login</a> -->
-				<?php }
-
-				?>
 				<div class="site-info" itemscope itemtype="http://schema.org/Store">
 					<?php
 					$comp_name = get_bloginfo('name');
